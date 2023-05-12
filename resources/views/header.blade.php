@@ -1,12 +1,6 @@
 <div id="header">
     <div class="header-top">
         <div class="container">
-            <div class="pull-left auto-width-left">
-                <ul class="top-menu menu-beta l-inline">
-                    <li><a href="#"><i class="fa fa-home"></i> Địa chỉ</a></li>
-                    <li><a href="#"><i class="fa fa-phone"></i> Số điện thoại</a></li>
-                </ul>
-            </div>
             <div class="pull-right auto-width-right">
                 <ul class="top-details menu-beta l-inline">
                     @if (Auth::check())

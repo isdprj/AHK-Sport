@@ -19,13 +19,13 @@
             <div class="space60">&nbsp;</div>
             <div class="row">
                 <div class="col-sm-3">
-                    <ul class="a    ">
+                    <ul class="aside-menu">
                         <li><a href="{{route('account')}}">Thông tin người dùng</a></li>
                         <li><a href="{{route('order')}}">Danh sách đơn hàng</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-9">
-                    <form action="" method="POST">Thông tin người dùng
+                    <form action="" method="POST">
                         <div class="card-body">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -42,7 +42,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="Phone">Số điện thoại</label>
-                                <input type="number" name="phone_number" value="{{$user->phone_number}}" class="form-control">
+                                <input type="text" name="phone_number" value="{{$user->phone_number}}" class="form-control">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -51,7 +51,8 @@
                                 <input type="text" name="address" value="{{$user->address}}" class="form-control">
                             </div>
                         </div>
-                        <button class="btn btn-success btn-xs pull-left" type="submit">Lưu thông tin</button>
+                        </br>
+                        <div class="text-center"><button class="btn btn-success btn primary" type="submit">Lưu thông tin</button></div>
                         </div>
                     </form>
                 </div>

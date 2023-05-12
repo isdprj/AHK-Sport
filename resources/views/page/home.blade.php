@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="beta-products-list">
-                        <h4><b>Sản phẩm hot</b></h4>
+                        <h5><b>Sản phẩm hot</b></h5>
                         <div class="beta-products-details">
                             <p class="pull-left">{{count($newProduct)}} sản phẩm</p>
                             <div class="clearfix"></div>
@@ -103,10 +103,9 @@
                         </div>
                     </div> <!-- .beta-products-list -->
 
-                    <div class="space50">&nbsp;</div>
-
+                    <div class="space60">&nbsp;</div>
                     <div class="beta-products-list">
-                        <h4><b>Các sản phẩm đang được giảm giá</b></h4>
+                        <h5><b>Các sản phẩm đang được giảm giá</b></h5>
                         <div class="beta-products-details">
                             <p class="pull-left">{{count($saleProduct)}} sản phẩm</p>
                             <div class="clearfix"></div>
@@ -166,13 +165,9 @@
                     </div> <!-- .beta-products-list -->
                 </div>
             </div> <!-- end section with sidebar and main content -->
-            <div class="space60">&nbsp;</div>
+            <div class="space4s0">&nbsp;</div>
             <div id="news" class="space-top-none">
-                <div class="row">
-                    <div class="col-sm-12 ">
-                        <h4><b>Có gì mới?</b></h4>
-                    </div>
-                </div>
+                        <h5><b>Có gì mới?</b></h5>
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="news-section">

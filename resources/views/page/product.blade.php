@@ -144,71 +144,36 @@
                     <div class="widget-body">
                         <div class="beta-sales beta-lists">
                             <div class="media beta-sales-item">
-                                <a class="pull-left" href="product.html"><img src="source/image/product/shoes_adidas1.1.png" alt=""></a>
+                                <a class="pull-left" href="{{route('product',1)}}"><img src="source/image/product/shoes_adidas1.1.png" alt=""></a>
                                 <div class="media-body">
-                                    Sản phẩm mẫu
+                                        ADIDAS PREDATOR ACCURACY .4 TF
                                     <span class="beta-sales-price">1.390.000đ</span>
                                 </div>
                             </div>
                             <div class="media beta-sales-item">
-                                <a class="pull-left" href="product.html"><img src="source/image/product/clothes2.2.png" alt=""></a>
+                                <a class="pull-left" href="{{route('product',27)}}"><img src="source/image/product/clothes2.png" alt=""></a>
                                 <div class="media-body">
-                                    Sản phẩm mẫu
+                                        BỘ QUẦN ÁO BÓNG ĐÁ KAMITO Q2
                                     <span class="beta-sales-price">199.000đ</span>
                                 </div>
                             </div>
                             <div class="media beta-sales-item">
-                                <a class="pull-left" href="product.html"><img src="source/image/product/shoes_kamito2.3.png" alt=""></a>
+                                <a class="pull-left" href="{{route('product',18)}}"><img src="source/image/product/shoes_kamito3.1.png" alt=""></a>
                                 <div class="media-body">
-                                    Sản phẩm mẫu
-                                    <span class="beta-sales-price">599.000đ</span>
+                                        GIÀY ĐÁ BÓNG KAMITO QH19 AS TF
+                                    <span class="beta-sales-price">555.000đ</span>
                                 </div>
                             </div>
                             <div class="media beta-sales-item">
-                                <a class="pull-left" href="product.html"><img src="source/image/product/balo3.1.png" alt=""></a>
+                                <a class="pull-left" href="{{route('product',32)}}"><img src="source/image/product/balo3.1.png" alt=""></a>
                                 <div class="media-body">
-                                    Sản phẩm mẫu
+                                        BALO XẾP GỌN NEYMARSPORT 2023
                                     <span class="beta-sales-price">139.000đ </span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div> <!-- best sellers widget -->
-                {{-- <div class="widget">
-                    <h3 class="widget-title">New Products</h3>
-                    <div class="widget-body">
-                        <div class="beta-sales beta-lists">
-                            <div class="media beta-sales-item">
-                                <a class="pull-left" href="product.html"><img src="source/assets/dest/images/products/sales/1.png" alt=""></a>
-                                <div class="media-body">
-                                    Sample Product
-                                    <span class="beta-sales-price">$34.55</span>
-                                </div>
-                            </div>
-                            <div class="media beta-sales-item">
-                                <a class="pull-left" href="product.html"><img src="source/assets/dest/images/products/sales/2.png" alt=""></a>
-                                <div class="media-body">
-                                    Sample Product
-                                    <span class="beta-sales-price">$34.55</span>
-                                </div>
-                            </div>
-                            <div class="media beta-sales-item">
-                                <a class="pull-left" href="product.html"><img src="source/assets/dest/images/products/sales/3.png" alt=""></a>
-                                <div class="media-body">
-                                    Sample Product
-                                    <span class="beta-sales-price">$34.55</span>
-                                </div>
-                            </div>
-                            <div class="media beta-sales-item">
-                                <a class="pull-left" href="product.html"><img src="source/assets/dest/images/products/sales/4.png" alt=""></a>
-                                <div class="media-body">
-                                    Sample Product
-                                    <span class="beta-sales-price">$34.55</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- best sellers widget --> --}}
             </div>
         </div>
     </div> <!-- #content -->
