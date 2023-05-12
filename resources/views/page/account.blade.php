@@ -22,6 +22,7 @@
                     <ul class="aside-menu">
                         <li><a href="{{route('account')}}">Thông tin người dùng</a></li>
                         <li><a href="{{route('order')}}">Danh sách đơn hàng</a></li>
+                        <li><a href="{{route('favourite')}}">Sản phẩm yêu thích</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-9">
@@ -51,7 +52,7 @@
                                 <input type="text" name="address" value="{{$user->address}}" class="form-control">
                             </div>
                         </div>
-                        </br>
+                        <br>
                         <div class="text-center"><button class="btn btn-success btn primary" type="submit">Lưu thông tin</button></div>
                         </div>
                     </form>

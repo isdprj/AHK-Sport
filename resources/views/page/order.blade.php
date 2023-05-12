@@ -30,7 +30,12 @@
             </td>
             <td>{{$dt->quantity}}</td>
             <td>{{$bill->status}}</td>
-            <td><button onclick="removeRow({{$bills->id}},)" class="btn btn-danger">Hủy</button></td>
+            <td><a href="{{route('cancel',$bill->id)}}" class="btn btn-danger">
+               @if ($bill->status == "Hoàn tất")
+                Yêu cầu hoàn trả
+               @endif
+                Hủy đơn hàng 
+            </a></td>
             @endforeach      
             
         </tr>

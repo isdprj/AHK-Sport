@@ -18,6 +18,13 @@
         <div class="main-content">
             <div class="space60">&nbsp;</div>
 <div class="row">
+    <div class="col-sm-3">
+        <ul class="aside-menu">
+            <li><a href="{{route('account')}}">Thông tin người dùng</a></li>
+            <li><a href="{{route('order')}}">Danh sách đơn hàng</a></li>
+            <li><a href="{{route('favourite')}}">Sản phẩm yêu thích</a></li>
+        </ul>
+    </div>
     <div class="col-sm-9">
         <div class="beta-products-list">
             <h4>Tất cả sản phẩm yêu thích</h4>

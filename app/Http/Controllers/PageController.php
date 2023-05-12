@@ -18,6 +18,8 @@ use App\Models\Favourite;
 use Exception;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
+use mysqli;
+
 
 
 class PageController extends Controller
@@ -254,6 +256,23 @@ class PageController extends Controller
                         ->get();
         return view('page.order',compact('bills','detailProduct'));
 
+    }
+    public function getCancel($id){
+        $bills = DB::table('bills')->where('id',$id)->get();
+        $conn =  new mysqli("localhost","root","","isd");
+        if (isset($_POST['submit']))
+        {
+            $sql = "UPDATE bills 
+                    SET note = '$_GET[note]' , status = 'Đã hủy đơn' 
+                    WHERE id = $id";
+            if ($conn->query($sql) === true){
+                Session::flash('success', 'Xác nhận thành công');
+                return redirect('page.order');
+            } else {
+                Session::flash('error', 'Có lỗi vui lòng thử lại');
+            }
+        }
+        return view('page.cancel',compact('bills'));
     }
 }
 
