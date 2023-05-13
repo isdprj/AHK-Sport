@@ -3,7 +3,7 @@
 <div class="inner-header">
     <div class="container">
         <div class="pull-left">
-            <h6 class="inner-title">Kết quả tìm kiếm</h6>
+            <h4 class="inner-title"> <b>Kết quả tìm kiếm</b> </h4>
         </div>
         <div class="pull-right">
             <div class="beta-breadcrumb font-large">
@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-sm-9">
                     <div class="beta-products-list">
-                        <h4>Tất cả sản phẩm</h4>
+                        <h6>Tất cả sản phẩm</h6>
                         <div class="beta-products-details">
                             <p class="pull-left">Số lượng: {{count($productSearch)}}</p>
                             <div class="clearfix"></div>

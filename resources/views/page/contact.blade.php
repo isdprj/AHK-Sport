@@ -3,7 +3,7 @@
 <div class="inner-header">
     <div class="container">
         <div class="pull-left">
-            <h6 class="inner-title">Liên hệ với chúng tôi</h6>
+            <h4 class="inner-title"> <b>Liên hệ với chúng tôi</b></h4>
         </div>
         <div class="pull-right">
             <div class="beta-breadcrumb font-large">
@@ -23,7 +23,7 @@
         <div class="space50">&nbsp;</div>
         <div class="row">
             <div class="col-sm-8">
-                <h2>Mẫu liên hệ</h2>
+                <h6>Mẫu liên hệ</h6>
                 <div class="space20">&nbsp;</div>
                 <p>Cảm ơn bạn đã liên hệ với chúng tôi! Để đảm bảo hiệu quả, vui lòng để lại thông tin ở bên dưới. <br>
                     Chúng tôi sẽ sớm liên hệ với bạn.</p>
@@ -36,7 +36,7 @@
                         <input name="your-email" type="email" placeholder="Email (bắt buộc)">
                     </div>
                     <div class="form-block">
-                        <input name="your-subject" type="text" placeholder="Thông tin">
+                        <input name="your-subject" type="text" placeholder="Địa chỉ">
                     </div>
                     <div class="form-block">
                         <textarea name="your-message" placeholder="Yêu cầu hỗ trợ"></textarea>
@@ -47,11 +47,11 @@
                 </form>
             </div>
             <div class="col-sm-4">
-                <h2>Thông tin liên hệ</h2>
+                <h6>Thông tin liên hệ</h6>
                 </br>
                 <div class="space20">&nbsp;</div>
                 
-                <h6 class="contact-title">Địa chỉ</h6>
+                <h8 class="contact-title">Địa chỉ</h8>
                 </br>
                 <p>
                     Khu đô thị Mễ Trì, Mễ Trì Hạ, quận Nam Từ Liêm <br>

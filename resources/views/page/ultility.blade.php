@@ -3,7 +3,7 @@
 <div class="inner-header">
     <div class="container">
         <div class="pull-left">
-            <h6 class="inner-title">Danh mục sản phẩm</h6>
+            <h4 class="inner-title"><b>Danh mục sản phẩm</b></h4>
         </div>
         <div class="pull-right">
             <div class="beta-breadcrumb font-large">
@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-sm-9">
                     <div class="beta-products-list">
-                        <h4>Tất cả sản phẩm</h4>
+                        <h6>Tất cả sản phẩm</h6>
                         <div class="beta-products-details">
                             <p class="pull-left">Số lượng: {{count($productUltility)}}</p>
                             <div class="clearfix"></div>

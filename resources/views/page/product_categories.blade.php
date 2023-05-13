@@ -3,7 +3,7 @@
 <div class="inner-header">
     <div class="container">
         <div class="pull-left">
-            <h6 class="inner-title">Danh mục sản phẩm</h6>
+            <h4 class="inner-title"> <b>Danh mục sản phẩm</b> </h4>
         </div>
         <div class="pull-right">
             <div class="beta-breadcrumb font-large">
@@ -34,7 +34,7 @@
                     <div class="beta-products-list">
                         <h4>Tất cả sản phẩm</h4>
                         <div class="beta-products-details">
-                            <p class="pull-left">Có {{count($productOfType)}} sản phẩm</p>
+                            <p class="pull-left">Số lượng: {{count($productOfType)}}</p>
                             <div class="clearfix"></div>
                         </div>
 
@@ -47,11 +47,10 @@
                                         <div class="ribbon sale">Sale</div>
                                     </div>
                                     @endif
+                                <div class="single-item">
                                     <div class="single-item-header">
                                         <a href="{{route('product',$pot->id)}}"><img src="source/image/product/{{$pot->image}}" alt=""></a>
                                     </div>
-                                </div>    
-                                <div class="single-item">
                                     <div class="single-item-body">
                                         <a href="{{route('product',$pot->id)}}"><p class="single-item-title">{{$pot->name}}</p></a> 
                                         <p class="single-item-price">
@@ -65,14 +64,16 @@
                                     </div>
                                     <div class="single-item-caption">
                                         <a class="add-to-cart pull-left" href="{{route('cart',$pot->id)}}"><i class="fa fa-shopping-cart"></i></a>
-                                        <a class="beta-btn primary" href="{{route('product',$pot->id)}}">Details <i class="fa fa-chevron-right"></i></a>
+                                        <a class="beta-btn primary" href="{{route('product',$pot->id)}}">Chi tiết <i class="fa fa-chevron-right"></i></a>
                                         <div class="clearfix"></div>
                                     </div>
+                                    </br>
                                 </div>
                             </div>
-                            @endforeach
                         </div>
+                            @endforeach
                     </div> <!-- .beta-products-list -->
+                    </div>
                     <div class="space50">&nbsp;</div>
                 </div>
             </div> <!-- end section with sidebar and main content -->

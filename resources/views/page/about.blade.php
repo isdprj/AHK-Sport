@@ -3,7 +3,7 @@
 <div class="inner-header">
     <div class="container">
         <div class="pull-left">
-            <h6 class="inner-title">Về AHK</h6>
+            <h4 class="inner-title"> <b>Về AHK</b> </h4>
         </div>
         <div class="pull-right">
             <div class="beta-breadcrumb font-large">

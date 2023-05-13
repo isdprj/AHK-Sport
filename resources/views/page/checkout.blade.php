@@ -3,7 +3,7 @@
 <div class="inner-header">
     <div class="container">
         <div class="pull-left">
-            <h6 class="inner-title">Thanh toán</h6>
+            <h4 class="inner-title"> <b>Thanh toán<b> </h4>
         </div>
         <div class="pull-right">
             <div class="beta-breadcrumb">
@@ -27,7 +27,7 @@
             <input type="hidden" name="_token" value="{{csrf_token()}}">
             <div class="row">
                 <div class="col-sm-6">
-                    <h4>Thông tin thanh toán</h4>
+                    <h6>Thông tin thanh toán</h6>
                     <div class="space20">&nbsp;</div>
 
                     <div class="form-block">
@@ -45,7 +45,7 @@
 
                     <div class="form-block">
                         <label for="adress">Địa chỉ*</label>
-                        <input type="text" name="address" value="Street Address" required>
+                        <input type="text" name="address" required>
                     </div>
 
                     <div class="form-block">
@@ -65,7 +65,7 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="your-order">
-                        <div class="your-order-head"><h5>Giỏ hàng</h5></div>
+                        <div class="your-order-head"><h6>Giỏ hàng</h6></div>
                         <div class="your-order-body">
                             <div class="your-order-item">
                                 <div>
@@ -100,32 +100,39 @@
                                 <div class="clearfix"></div>
                             </div>
                         </div>
-                        <div class="your-order-head"><h5>Phương thức thanh toán</h5></div>
+                        <div class="your-order-head"><h6>Phương thức thanh toán</h6></div>
                         
                         <div class="your-order-body">
                             <ul class="payment_methods methods">
                                 <li class="payment_method_bacs">
                                     <input id="payment_method_bacs" type="radio" class="input-radio" name="payment" value="bacs" checked="checked" data-order_button_text="">
-                                    <label for="payment_method_bacs">Chuyển khoản trực tiếp </label>
+                                    <label for="payment_method_bacs">Thanh toán khi nhận hàng</label>
                                     <div class="payment_box payment_method_bacs" style="display: block;">
-                                    Thực hiện thanh toán của bạn trực tiếp vào tài khoản ngân hàng của chúng tôi. Vui lòng sử dụng ID đơn đặt hàng của bạn làm tham chiếu thanh toán. Lưu ý: Đơn hàng của bạn sẽ không được giao cho đến khi thông tin thanh toán của bạn được xác nhận thành công.
+                                    - Chỉ nhận hàng khi đơn hàng ở trạng thái "ĐANG GIAO HÀNG".
+                                    <br>
+                                    - Lưu í kiểm tra mã đơn hàng, mã vận đơn và người gửi "TRƯỚC KHI THANH TOÁN".
+                    
                                     </div>						
                                 </li>
 
                                 <li class="payment_method_cheque">
                                     <input id="payment_method_cheque" type="radio" class="input-radio" name="payment" value="cheque" data-order_button_text="">
-                                    <label for="payment_method_cheque">Thanh toán bằng Séc </label>
-                                    <div class="payment_box payment_method_cheque" style="display: none;">
-                                        Vui lòng gửi séc của bạn đến Tên cửa hàng, Phố cửa hàng, Thị trấn cửa hàng, Bang / Hạt cửa hàng, Mã bưu điện cửa hàng.
-                                    </div>						
+                                    <label for="payment_method_cheque">Ví VNPay </label>		
                                 </li>
                                 
                                 <li class="payment_method_paypal">
                                     <input id="payment_method_paypal" type="radio" class="input-radio" name="payment" value="paypal" data-order_button_text="Proceed to PayPal">
-                                    <label for="payment_method_paypal">Thanh toán bằng PayPal </label>
-                                    <div class="payment_box payment_method_paypal" style="display: none;">
-                                        Thanh toán qua PayPal; bạn có thể thanh toán bằng thẻ tín dụng nếu bạn không có tài khoản PayPal
-                                    </div>						
+                                    <label for="payment_method_paypal">Thẻ tín dụng/Thẻ ghi nợ </label>					
+                                </li>
+
+                                <li class="payment_method_paypal">
+                                    <input id="payment_method_paypal" type="radio" class="input-radio" name="payment" value="paypal" data-order_button_text="Proceed to PayPal">
+                                    <label for="payment_method_paypal">Zalo Pay</label>				
+                                </li>
+
+                                <li class="payment_method_paypal">
+                                    <input id="payment_method_paypal" type="radio" class="input-radio" name="payment" value="paypal" data-order_button_text="Proceed to PayPal">
+                                    <label for="payment_method_paypal">Momo</label>				
                                 </li>
                             </ul>
                         </div>
