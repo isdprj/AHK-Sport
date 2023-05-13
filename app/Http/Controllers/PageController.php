@@ -227,7 +227,7 @@ class PageController extends Controller
         return redirect()->back()->with('anno', 'Đặt hàng thành công');
     }
 
-    public function getAccount($id){
+    public function getAccount(){
         $id = Auth::id();
         $user = Auth::user();
         $conn =  new mysqli("localhost","root","","isd");

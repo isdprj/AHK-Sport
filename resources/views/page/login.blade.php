@@ -38,8 +38,8 @@
                         <input type="email" name="email" required>
                     </div>
                     <div class="form-block">
-                        <label for="phone"> <b>Mật khẩu*</b> </label>
-                        <input type="text" name="password" required>
+                        <label for="password"> <b>Mật khẩu*</b> </label>
+                        <input type="password" name="password" required>
                     </div>
                     {{-- <div class="form-group">
                         <label class="label-agree-term"><span></span><span></span>
