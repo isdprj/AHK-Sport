@@ -26,7 +26,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-9">
-                    <form action="" method="POST">
+                    <form action="{{route('account')}}" method="PUT">
                         <div class="card-body">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -53,7 +53,7 @@
                             </div>
                         </div>
                         <br>
-                        <div class="text-center"><button class="btn btn-success btn primary" type="submit">Lưu thông tin</button></div>
+                        <div class="text-center"><input class="btn btn-success btn-primary" value="Cập nhật" type="submit"></div>
                         </div>
                     </form>
                 </div>

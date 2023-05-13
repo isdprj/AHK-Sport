@@ -227,9 +227,26 @@ class PageController extends Controller
         return redirect()->back()->with('anno', 'Đặt hàng thành công');
     }
 
-    public function getAccount(){
+    public function getAccount($id){
         $id = Auth::id();
         $user = Auth::user();
+        $conn =  new mysqli("localhost","root","","isd");
+        if (isset($_POST['submit']))
+        {
+            $sql = "UPDATE users 
+                    SET full_name = '$_GET[full_name]' ,
+                        email = '$_GET[email]',
+                        phone_number = '$_GET[phone_number]',
+                        address = '$_GET[address]'
+                    WHERE id = $id";
+            if ($conn->query($sql) === true){
+                Session::flash('success', 'Cập nhật thành công');
+                return redirect('order');
+            } else {
+                Session::flash('error', 'Có lỗi vui lòng thử lại');
+                return redirect()->back();
+            }
+        }
         return view('page.account',compact('user','id'));
     }
     public function postAccount(Request $req, User $user){
@@ -258,22 +275,22 @@ class PageController extends Controller
 
     }
     public function getCancel($id){
-        $bills = DB::table('bills')->where('id',$id)->get();
+        $bills = DB::table('bills')->where('id',$id)->first();
         $conn =  new mysqli("localhost","root","","isd");
-        if (isset($_POST['submit']))
+        if (isset($_GET['note']))
         {
             $sql = "UPDATE bills 
                     SET note = '$_GET[note]' , status = 'Đã hủy đơn' 
                     WHERE id = $id";
             if ($conn->query($sql) === true){
                 Session::flash('success', 'Xác nhận thành công');
-                return redirect('page.order');
+                return redirect('order');
             } else {
-                Session::flash('error', 'Có lỗi vui lòng thử lại');
+                Session::flash('error', 'Có lỗi');
+                return redirect()->back();
             }
         }
         return view('page.cancel',compact('bills'));
     }
 }
-
 

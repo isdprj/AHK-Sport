@@ -73,7 +73,7 @@
                                 <option value="Đang vận chuyển">Đang vận chuyển</option>
                                 <option value="Hoàn tất">Hoàn tất</option>
                         </select>
-                        <button type="submit">Lưu</button>
+                        <button type="submit" class="btn btn-success">Lưu</button>
                     </form>
                 </td>
             

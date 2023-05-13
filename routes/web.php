@@ -71,7 +71,7 @@ Route::get('reset-password/{token}', [ResetPasswordController::class, 'create'])
 Route::post('reset-password', [ResetPasswordController::class, 'store'])
                 ->middleware('guest');
                 
-Route::get('account',[PageController::class,'getAccount'])->name('account');
+Route::get('account/{id}',[PageController::class,'getAccount'])->name('account');
 Route::get('cart/{id}', [PageController::class, 'addCart'])->name('cart');
 
 Route::get('del-cart/{id}',[PageController::class, 'delCart'])->name('del-cart');

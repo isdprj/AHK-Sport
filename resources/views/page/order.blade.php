@@ -30,12 +30,16 @@
             </td>
             <td>{{$dt->quantity}}</td>
             <td>{{$bill->status}}</td>
-            <td><a href="{{route('cancel',$bill->id)}}" class="btn btn-danger">
+            <td>
+            @if($bill->status != "Đã hủy đơn")    
+                <a href="{{route('cancel',$bill->id)}}" class="btn btn-danger">
                @if ($bill->status == "Hoàn tất")
                 Yêu cầu hoàn trả
                @endif
                 Hủy đơn hàng 
-            </a></td>
+            </a>
+            @endif
+            </td>
             @endforeach      
             
         </tr>

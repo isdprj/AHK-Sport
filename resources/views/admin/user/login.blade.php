@@ -11,7 +11,7 @@
         <!-- /.login-logo -->
         <div class="card">
             <div class="card-body login-card-body">
-                <p class="login-box-msg">Sign in to start your session</p>
+                <p class="login-box-msg">Đăng nhập</p>
                 @include('admin.alert')
                 <form action="/admin/users/login/store" method="post">
                     <div class="input-group mb-3">
@@ -32,7 +32,7 @@
                     </div>
                         <!-- /.col -->
                         <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                            <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
                         </div>
                         <!-- /.col -->
                     </div>

@@ -5,10 +5,7 @@
     <div class="container">
         <div class="pull-left">
             <h6 class="inner-title">
-                @if($bills->status == "Hoàn tất")
-                Vì sao bạn muốn hoàn trả hàng?
-                @endif
-                Vì sao bạn muốn hủy đơn hàng
+                Cho chúng tôi biết lí do
             </h6>
         </div>
         <div class="pull-right">
@@ -32,15 +29,14 @@
                     </ul>
                 </div>
                 <div class="col-sm-9">
-                    <form action="" method="POST">
+                    <form action="{{route('cancel',$bills->id)}}" method="PUT">
                         <div class="card-body">
-                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="Name">Hãy cho chúng tôi biết</label>
-                                    <textarea name="note" id="note" class="form-control"></textarea>
-                                </div>
+                                    <textarea name="note" id="note" class="form-control"></textarea>    
                             </div>
-                            <input type="submit" value="Xác nhận" name="submit" class="">
+                        </div>
+                    <button type="submit" class="btn btn-success">Xác nhận</button>
                     </form>
                 </div>
             </div>
@@ -50,9 +46,17 @@
 @endsection
 
 @section('footer')
-    <script>
+<!-- jQuery -->
+<script src="/templates/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/templates/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/templates/dist/js/adminlte.min.js"></script>
+
+<script src="/source/assets/dest/js/main.js"></script>
+<script>
         window.onload = function() {
             CKEDITOR.replace( 'note' );
     };
-    </script>
+</script>
 @endsection
