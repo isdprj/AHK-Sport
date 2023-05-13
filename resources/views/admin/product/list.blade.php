@@ -37,7 +37,7 @@
                 <td>{{ $product->id_category }}</td>
                 <td>{{ $product->unit_price }}</td>
                 <td>{{ $product->promotion_price }}</td>
-                <td>{{$product->description}}</td>
+                <td class="hide-text">{{$product->description}}</td>
                 <td>{{$product->stats}}</td>
                 <td>{{$product->unit}}</td>
                 <td>{{$product->quantity}}</td>

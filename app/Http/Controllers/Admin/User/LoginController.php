@@ -31,7 +31,7 @@ class LoginController extends Controller
             return redirect()->route('admin');
         }
 
-        Session::flash('error', 'Email hoặc Password không đúng');
+        Session::flash('error', 'Tài khoản hoặc Password không đúng');
         return redirect()->back();
     }
 }

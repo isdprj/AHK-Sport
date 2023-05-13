@@ -1,7 +1,7 @@
 @extends('admin.main')
 
 @section('content')
-    <form action="" method="PUT">
+    <form action="/admin/users/edit/{{$user->id}}" method="PUT">
         <div class="card-body">
             <div class="row">
                 <div class="col-md-6">

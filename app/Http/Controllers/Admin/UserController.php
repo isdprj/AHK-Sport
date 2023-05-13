@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Log;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use mysqli;
 
 class UserController extends Controller
 {
@@ -25,8 +26,23 @@ class UserController extends Controller
         return view('admin.user.list',compact('users','title'));
     }
 
-    public function show(User $user){
+    public function show($id){
         $title = 'Chỉnh sửa thông tin người dùng';
+        $user = DB::table('users')->where('id',$id)->get();
+        $conn =  new mysqli("localhost","root","","isd");
+        if (isset($_GET['is_admin']))
+        {
+            $sql = "UPDATE users 
+                    SET is_admin = '$_GET[is_admin]'
+                    WHERE id = $id";
+            if ($conn->query($sql) === true){
+                Session::flash('success', 'Cập nhật thành công');
+                return redirect()->back();
+            } else {
+                Session::flash('error', 'Có lỗi vui lòng thử lại');
+                return redirect()->back();
+            }
+        }
         return view('admin.user.edit', compact('user','title'));
     }
 

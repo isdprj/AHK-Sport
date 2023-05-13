@@ -121,8 +121,7 @@ Route::middleware(['auth'])->group(function () {
 
         Route::prefix('users')->group(function(){
             Route::get('list', [UserController::class, 'index']);
-            Route::get('edit/{user}', [UserController::class, 'show']);
-            Route::put('edit/{user}', [UserController::class, 'update']);
+            Route::get('edit/{id}', [UserController::class, 'show']);
         });
 
         Route::prefix('orders')->group(function(){
