@@ -1,5 +1,14 @@
 @extends('base')
 @section('content')
+@if (Session::has('success'))
+<div class="alert alert-success">
+    {{Session::get('success')}}
+</div>
+@else
+<div class="alert alert-danger">
+    {{Session::get('error')}}
+</div>
+@endif
 <div class="inner-header">
     <div class="container">
         <div class="pull-left">
@@ -53,7 +62,7 @@
                             </div>
                         </div>
                         <br>
-                        <div class="text-center"><input class="btn btn-success btn-primary" value="Cập nhật" type="submit"></div>
+                        <div class="text-center"><input class="btn btn-success btn-primary" value="Cập nhật" name="submit" type="submit"></div>
                         </div>
                     </form>
                 </div>

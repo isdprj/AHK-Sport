@@ -28,7 +28,7 @@ class UserController extends Controller
 
     public function show($id){
         $title = 'Chỉnh sửa thông tin người dùng';
-        $user = DB::table('users')->where('id',$id)->get();
+        $user = DB::table('users')->where('id',$id)->first();
         $conn =  new mysqli("localhost","root","","isd");
         if (isset($_GET['is_admin']))
         {
@@ -37,7 +37,7 @@ class UserController extends Controller
                     WHERE id = $id";
             if ($conn->query($sql) === true){
                 Session::flash('success', 'Cập nhật thành công');
-                return redirect()->back();
+                return redirect('/admin/users/list');
             } else {
                 Session::flash('error', 'Có lỗi vui lòng thử lại');
                 return redirect()->back();

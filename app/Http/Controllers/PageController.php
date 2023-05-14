@@ -231,7 +231,7 @@ class PageController extends Controller
         $id = Auth::id();
         $user = Auth::user();
         $conn =  new mysqli("localhost","root","","isd");
-        if (isset($_POST['submit']))
+        if (isset($_GET['full_name'])&&isset($_GET['email'])&&isset($_GET['phone_number'])&&isset($_GET['address']))
         {
             $sql = "UPDATE users 
                     SET full_name = '$_GET[full_name]' ,
@@ -241,7 +241,7 @@ class PageController extends Controller
                     WHERE id = $id";
             if ($conn->query($sql) === true){
                 Session::flash('success', 'Cập nhật thành công');
-                return redirect('order');
+                return redirect()->back();
             } else {
                 Session::flash('error', 'Có lỗi vui lòng thử lại');
                 return redirect()->back();
