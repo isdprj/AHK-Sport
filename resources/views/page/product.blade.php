@@ -53,34 +53,35 @@
                         <div class="space20">&nbsp;</div>
 
                         <div class="single-item-options">
-                            <p class="select-title">Chọn mẫu:&nbsp;</p>
-                            <select class="wc-select" name="variation">
-                                @foreach ($productVariation as $pv)
-                                <option value="{{$pv->varname}}">{{$pv->varname}}</option>
-                                @endforeach
-                            </select>
-                            <p class="select-title">Kích cỡ:&nbsp;</p>
-                            @if ($product->id_category < 6) <select class="wc-select" name="size">
-                                <option value="36">36</option>
-                                <option value="37">37</option>
-                                <option value="38">38</option>
-                                <option value="39">39</option>
-                                <option value="40">40</option>
-                                <option value="41">41</option>
-                                <option value="42">42</option>
-                                <option value="43">43</option>
-                                </select>
+                            @if ($product->id_category < 6) <p class="select-title">Kích cỡ:&nbsp;</p>
+                                <div class="col-sm-3">
+                                    <select class="wc-select" name="size">
+                                        <option value="36">36</option>
+                                        <option value="37">37</option>
+                                        <option value="38">38</option>
+                                        <option value="39">39</option>
+                                        <option value="40">40</option>
+                                        <option value="41">41</option>
+                                        <option value="42">42</option>
+                                        <option value="43">43</option>
+                                    </select>
+                                </div>
                                 @elseif ($product->id_category == 8)
-                                <select class="wc-select" name="size">
-                                    <option value="s">S</option>
-                                    <option value="m">M</option>
-                                    <option value="l">L</option>
-                                    <option value="xl">XL</option>
-                                </select>
+                                <p class="select-title">Kích cỡ:&ensp;</p>
+                                <div class="col-sm-3">
+                                    <select class="wc-select" name="size">
+                                        <option value="s">S</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                        <option value="xl">XL</option>
+                                    </select>
+                                </div>
                                 @endif
-                                <a class="add-to-cart" href="{{route('cart',$product->id)}}"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                                <div class="space20">&nbsp;</div>
+                                <p>Giỏ hàng:&ensp; <a class="add-to-cart" href="{{route('cart',$product->id)}}"><i class="fa fa-shopping-cart"></i></a></p>
                                 <div class="clearfix"></div>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -146,28 +147,28 @@
                             <div class="media beta-sales-item">
                                 <a class="pull-left" href="{{route('product',1)}}"><img src="source/image/product/shoes_adidas1.1.png" alt=""></a>
                                 <div class="media-body">
-                                        ADIDAS PREDATOR ACCURACY .4 TF
+                                    ADIDAS PREDATOR ACCURACY .4 TF
                                     <span class="beta-sales-price">1.390.000đ</span>
                                 </div>
                             </div>
                             <div class="media beta-sales-item">
                                 <a class="pull-left" href="{{route('product',27)}}"><img src="source/image/product/clothes2.png" alt=""></a>
                                 <div class="media-body">
-                                        BỘ QUẦN ÁO BÓNG ĐÁ KAMITO Q2
+                                    BỘ QUẦN ÁO BÓNG ĐÁ KAMITO Q2
                                     <span class="beta-sales-price">199.000đ</span>
                                 </div>
                             </div>
                             <div class="media beta-sales-item">
                                 <a class="pull-left" href="{{route('product',18)}}"><img src="source/image/product/shoes_kamito3.1.png" alt=""></a>
                                 <div class="media-body">
-                                        GIÀY ĐÁ BÓNG KAMITO QH19 AS TF
+                                    GIÀY ĐÁ BÓNG KAMITO QH19 AS TF
                                     <span class="beta-sales-price">555.000đ</span>
                                 </div>
                             </div>
                             <div class="media beta-sales-item">
                                 <a class="pull-left" href="{{route('product',32)}}"><img src="source/image/product/balo3.1.png" alt=""></a>
                                 <div class="media-body">
-                                        BALO XẾP GỌN NEYMARSPORT 2023
+                                    BALO XẾP GỌN NEYMARSPORT 2023
                                     <span class="beta-sales-price">139.000đ </span>
                                 </div>
                             </div>
