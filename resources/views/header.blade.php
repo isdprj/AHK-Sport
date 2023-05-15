@@ -87,8 +87,6 @@
                                                 </select>                                           
                                             </span>
                                             @endif
-                                            {{-- <span class="cart-item-options"> 
-                                        </span> --}}
                                         <p class="mg-4">Số lượng:
                                             <span class="cart-item-amount">
                                                 <b>{{$product['qty']}}</b>
@@ -145,7 +143,6 @@
             <nav class="main-menu">
                 <ul class="l-inline ov">
                     <li><a href="{{route('index')}}"><i class="fa fa-home fa-lg"></i><b>Trang chủ</b></a></li>
-                    {{-- <li><a href="{{route('product_categories')}}">Các sản phẩm của chúng tôi</a></li> --}}
                     <li><a href="{{route('shoes')}}">Giày</a>
                         <ul class="sub-menu">
                             @foreach ($shoeType as $sType)

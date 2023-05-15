@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Bill;
-use App\Models\BillDetail;
 use Exception;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\DB;
@@ -56,20 +55,4 @@ class OrderController extends Controller
 
         return view('admin.order.detail', compact('detailProduct','customers','title','bills'));
     }
-
-    public function update(Request $req, $id){
-        $bills = Bill::where('id',$id)->first();
-            try{
-                $bills->fill($req->only('status'));
-                $bills->update();
-                Session::flash('success', 'Cập nhật thành công');
-            }
-            catch(Exception $e){
-                Session::flash('error', 'Có lỗi vui lòng thử lại');
-                Log::info($e->getMessage());
-            }
-        
-        return redirect('admin/orders/list');
-    }
-    
 }

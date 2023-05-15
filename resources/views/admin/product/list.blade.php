@@ -15,30 +15,29 @@
     <table class="table">
         <thead>
         <tr>
-            <th style="width: 50px">ID</th>
-            <th>Tên Sản Phẩm</th>
-            <th>Danh Mục</th>
+            <th style="width: 10px">ID</th>
+            <th style="width: 80px">Tên Sản Phẩm</th>
+            <th style="width: 50px">Loại</th>
             <th>Giá Gốc</th>
-            <th>Giá Khuyến Mãi</th>
+            <th>Khuyến Mãi</th>
             <th>Mô tả</th>
             <th>Thông số</th>
             <th>Đơn vị</th>
             <th>Số lượng</th>
-            <th>Cập nhập</th>
+            <th style="width: 100px">Cập nhập</th>
             <th>Tùy chỉnh</th>
-            <th style="width: 100px">&nbsp;</th>
         </tr>
         </thead>
         <tbody>
             @foreach($products as $key => $product)
             <tr>
                 <td>{{ $product->id }}</td>
-                <td>{{ $product->name }}</td>
+                <td >{{ $product->name }}</td>
                 <td>{{ $product->id_category }}</td>
                 <td>{{ $product->unit_price }}</td>
                 <td>{{ $product->promotion_price }}</td>
-                <td class="hide-text">{{$product->description}}</td>
-                <td>{{$product->stats}}</td>
+                <td style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;max-width:250px;">{{$product->description}}</td>
+                <td style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width:150px">{{$product->stats}}</td>
                 <td>{{$product->unit}}</td>
                 <td>{{$product->quantity}}</td>
                 {{-- <td>{!! \App\Helpers\Helper::active($product->active) !!}</td> --}}

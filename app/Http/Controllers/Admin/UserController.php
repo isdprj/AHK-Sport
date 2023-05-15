@@ -6,9 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Http\Services\User\UserService;
 use App\Models\User;
 use Illuminate\Support\Facades\Session;
-use Illuminate\Support\Facades\Log;
-use Exception;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use mysqli;
 
@@ -44,37 +41,6 @@ class UserController extends Controller
             }
         }
         return view('admin.user.edit', compact('user','title'));
-    }
-
-    public function update(Request $request ,User $user){
-        $result = $this->userService->update($request, $user);
-        if ($result) {
-            return redirect('/admin/users/list');
-        } else{
-            return redirect()->back();
-        }
-    }
-
-    public function deleteUser($request){
-            $user = User::where('id', $request->input('id'))->first();
-            if ($user) {
-                $user->delete();
-                return true;
-            }
-            return false;
-        }
-    public function destroy(Request $request)
-    {
-
-        $result = $this->deleteUser($request);
-        if ($result) {
-            return response()->json([
-                'error' => false,
-                'message' => 'Xóa thành công người dùng'
-            ]);
-        }
-
-        return response()->json([ 'error' => true ]);
     }
 }
 

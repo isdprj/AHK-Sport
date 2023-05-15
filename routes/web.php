@@ -127,25 +127,7 @@ Route::middleware(['auth'])->group(function () {
         Route::prefix('orders')->group(function(){
             Route::get('list', [OrderController::class, 'index']);
             Route::get('detail/{id}',[OrderController::class,'show']);
-            Route::put('detail/{id}',[OrderController::class,'update']);
         });
-
-        // #Slider
-        // Route::prefix('sliders')->group(function () {
-        //     Route::get('add', [SliderController::class, 'create']);
-        //     Route::post('add', [SliderController::class, 'store']);
-        //     Route::get('list', [SliderController::class, 'index']);
-        //     Route::get('edit/{slider}', [SliderController::class, 'show']);
-        //     Route::post('edit/{slider}', [SliderController::class, 'update']);
-        //     Route::DELETE('destroy', [SliderController::class, 'destroy']);
-        // });
-
-        #Upload
-        // Route::post('upload/services', [\App\Http\Controllers\Admin\UploadController::class, 'store']);
-
-        // #Cart
-        // Route::get('customers', [\App\Http\Controllers\Admin\CartController::class, 'index']);
-        // Route::get('customers/view/{customer}', [\App\Http\Controllers\Admin\CartController::class, 'show']);
     });
 });
 

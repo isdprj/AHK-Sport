@@ -31,7 +31,6 @@ class ProductController extends Controller
         $productCatergory = ProductCategory::get()->sortBy('id');
         return view('admin.product.add', [
             'title' => 'Thêm Sản Phẩm Mới',
-            // 'menus' => $this->productService->getMenu(),
             'productCategory' => $productCatergory
         ]);
     }
@@ -51,7 +50,6 @@ class ProductController extends Controller
             'title' => 'Chỉnh Sửa Sản Phẩm',
             'product' => $product,
             'productCategory' =>$productCategory
-            // 'menus' => $this->productService->getMenu()
         ]);
     }
 
