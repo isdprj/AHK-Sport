@@ -161,59 +161,78 @@
                         </div>
                         <div class="row">{{$saleProduct->links()}}</div>
                         <div class="space40">&nbsp;</div>
+                    </div>
+                </div> <!-- .beta-products-list -->
+            </div>
+        </div> <!-- end section with sidebar and main content -->
+        <div class="space20">&nbsp;</div>
+        <div id="news" class="space-top-none">
+            <h5><b>Có gì mới?</b></h5>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="news-section">
+                        <div class="news-box">
+                            <div class="news-img">
+                                <a href="https://www.24h.com.vn/bong-da/man-city-arsenal-dai-chien-ai-se-khong-may-nhap-hoi-nhung-a-quan-vi-dai-nhat-c48a1461451.html"><img src="source/image/product/1.jpg" alt="" style="transition: transform 0.3s ease; transform-origin: center;">
+                                    <style>
+                                        img:hover {
+                                            transform: scale(1.05);
+                                        }
+                                    </style>
+                                </a>
+                            </div>
+                            <div class="news-title">
+                                <a href="https://www.24h.com.vn/bong-da/man-city-arsenal-dai-chien-ai-se-khong-may-nhap-hoi-nhung-a-quan-vi-dai-nhat-c48a1461451.html">Man City - Arsenal đại chiến: Ai sẽ không may "nhập hội" những Á quân vĩ đại nhất?</a>
+                            </div>
+                            </br>
+                            <div class="news-content">"Ai thua cuộc chiến Man City - Arsenal sẽ nhập hội những đội Á quân vĩ đại nhất."</div>
                         </div>
-                    </div> <!-- .beta-products-list -->
+                    </div>
                 </div>
-            </div> <!-- end section with sidebar and main content -->
-            <div class="space4s0">&nbsp;</div>
-            <div id="news" class="space-top-none">
-                        <h5><b>Có gì mới?</b></h5>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="news-section">
-                            <div class="news-box">
-                                <div class="news-img">
-                                    <a href="https://www.24h.com.vn/bong-da/man-city-arsenal-dai-chien-ai-se-khong-may-nhap-hoi-nhung-a-quan-vi-dai-nhat-c48a1461451.html"><img src="source/image/product/1.jpg" alt=""></a>
-                                </div>
-                                <div class="news-title">
-                                    <a href="https://www.24h.com.vn/bong-da/man-city-arsenal-dai-chien-ai-se-khong-may-nhap-hoi-nhung-a-quan-vi-dai-nhat-c48a1461451.html">Man City - Arsenal đại chiến: Ai sẽ không may "nhập hội" những Á quân vĩ đại nhất?</a>
-                                </div>
-                                </br>
-                                <div class="news-content">"Ai thua cuộc chiến Man City - Arsenal sẽ nhập hội những đội Á quân vĩ đại nhất."</div>
+                <div class="col-sm-4">
+                    <div class="news-section">
+                        <div class="news-box">
+                            <div class="news-img">
+                                <a href="https://www.24h.com.vn/bong-da/tuong-thuat-bong-da-west-ham-liverpool-lu-doan-do-tiep-da-thang-hoa-ngoai-hang-anh-c48a1461612.html"><img src="source/image/product/2.jpg" alt="" style="transition: transform 0.3s ease; transform-origin: center;">
+                                    <style>
+                                        img:hover {
+                                            transform: scale(1.05);
+                                        }
+                                    </style>
+                                </a>
                             </div>
+                            <div class="news-title">
+                                <a href="https://www.24h.com.vn/bong-da/tuong-thuat-bong-da-west-ham-liverpool-lu-doan-do-tiep-da-thang-hoa-ngoai-hang-anh-c48a1461612.html">Tường thuật bóng đá West Ham - Liverpool: Kỳ vọng vào Salah (Ngoại hạng Anh)</a>
+                            </div>
+                            </br>
+                            <div class="news-content">"(West Ham - Liverpool, 1h45, 27/4, vòng 33 Ngoại hạng Anh) Salah đang có phong độ cao ở thời gian gần đây trong màu áo Liverpool.</div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="news-section">
-                            <div class="news-box">
-                                <div class="news-img"> 
-                                    <a href="https://www.24h.com.vn/bong-da/tuong-thuat-bong-da-west-ham-liverpool-lu-doan-do-tiep-da-thang-hoa-ngoai-hang-anh-c48a1461612.html"><img src="source/image/product/2.jpg" alt=""></a>   
-                                </div>
-                                <div class="news-title">
-                                    <a href="https://www.24h.com.vn/bong-da/tuong-thuat-bong-da-west-ham-liverpool-lu-doan-do-tiep-da-thang-hoa-ngoai-hang-anh-c48a1461612.html">Tường thuật bóng đá West Ham - Liverpool: Kỳ vọng vào Salah (Ngoại hạng Anh)</a>
-                                </div>
-                                </br>
-                                <div class="news-content">"(West Ham - Liverpool, 1h45, 27/4, vòng 33 Ngoại hạng Anh) Salah đang có phong độ cao ở thời gian gần đây trong màu áo Liverpool.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="news-section">
-                            <div class="news-box">
-                                <div class="news-img">
-                                    <a href="https://www.24h.com.vn/bong-da/tuong-thuat-bong-da-chelsea-brentford-nguy-co-tiep-tuc-tham-hoa-ngoai-hang-anh-c48a1461594.html"><img src="source/image/product/3.jpg" alt=""></a>
+                </div>
+                <div class="col-sm-4">
+                    <div class="news-section">
+                        <div class="news-box">
+                            <div class="news-img">
+                                <a href="https://www.24h.com.vn/bong-da/tuong-thuat-bong-da-chelsea-brentford-nguy-co-tiep-tuc-tham-hoa-ngoai-hang-anh-c48a1461594.html">
+                                    <img src="source/image/product/3.jpg" alt="" img src="source/image/product/1.jpg" alt="" style="transition: transform 0.3s ease; transform-origin: center;">
+                                    <style>
+                                        img:hover {
+                                            transform: scale(1.05);
+                                        }
+                                    </style>
+                                </a>
 
-                                </div>
-                                <div class="news-title">
-                                    <a href= "https://www.24h.com.vn/bong-da/tuong-thuat-bong-da-chelsea-brentford-nguy-co-tiep-tuc-tham-hoa-ngoai-hang-anh-c48a1461594.html">Tường thuật bóng đá Chelsea - Brentford: Lampard xác nhận tin xấu 2 trụ cột (Ngoại hạng Anh)</a> 
-                                </div>
-                                </br>
-                                <div class="news-content">"(Chelsea - Brentford, 1h45, 27/4, vòng 33 Ngoại hạng Anh) HLV Lampard có những chia sẻ không mấy tích cực về lực lượng Chelsea trước ngày đấu Brentford.</div>
                             </div>
+                            <div class="news-title">
+                                <a href="https://www.24h.com.vn/bong-da/tuong-thuat-bong-da-chelsea-brentford-nguy-co-tiep-tuc-tham-hoa-ngoai-hang-anh-c48a1461594.html">Tường thuật bóng đá Chelsea - Brentford: Lampard xác nhận tin xấu 2 trụ cột (Ngoại hạng Anh)</a>
+                            </div>
+                            </br>
+                            <div class="news-content">"(Chelsea - Brentford, 1h45, 27/4, vòng 33 Ngoại hạng Anh) HLV Lampard có những chia sẻ không mấy tích cực về lực lượng Chelsea trước ngày đấu Brentford.</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> <!-- .main-content -->
-    </div> <!-- #content -->
-    @endsection
+        </div>
+    </div> <!-- .main-content -->
+</div> <!-- #content -->
+@endsection

@@ -68,7 +68,7 @@
                         <label for="phone"><b>Xác nhận mật khẩu*</b></label>
                         <input type="text" name="re_password" required>
                     </div>
-                    <div class="form-block">
+                    <div class="text-center">
                         <button type="submit" class="btn btn-primary">Đăng ký</button>
                     </div>
                 </div>

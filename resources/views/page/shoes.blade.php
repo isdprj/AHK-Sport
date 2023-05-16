@@ -92,6 +92,7 @@
                                         @endif
                                         <div class="clearfix"></div>
                                     </div>
+                                    <br>
                                 </div>
                             </div>
                         </div>
