@@ -18,7 +18,7 @@
             <th style="width: 100px">Mã đơn</th>
             <th>Ngày đặt</th>
             <th>Tình trạng</th>
-            <th>Chi tiết</th>
+            <th>Xem chi tiết</th>
             {{-- <th>Trạng thái thanh toán</th> --}}
             <th style="width: 100px">&nbsp;</th>
         </tr>
@@ -34,7 +34,7 @@
                 @endif  
                 <span class="btn btn-danger btn-xs">{{$bill->status}}</span>
                 </td>
-                <td> <a href="/admin/orders/detail/{{$bill->id}}">Chi tiet</a> </td>
+                <td> <a href="/admin/orders/detail/{{$bill->id}}">Chi tiết</a></td>
             </tr>
             @endforeach
         </tbody>

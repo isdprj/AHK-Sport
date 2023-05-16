@@ -144,37 +144,46 @@
                                 <li>
                                     <input type="radio" class="input-radio" name="payment" value="vnpay" onclick="show2();">
                                     <label for="payment_method_vnpay">Ví VNPay </label>	
-                                    <img width="5%" src="source/image/QR/banking.jpg" alt class="pull-right">
                                     <div id="payment_method_vnpay" class="payment_box"> 
-                                    - Đảm bảo bạn có tài khoản VNPAY  đang hoạt động
-                                    <br>
-                                    - Có đủ số dư trong tài khaonr VNPAY.
+                                        <img width="33%" style="margin-left:10px;display:block" src="source/image/QR/banking.jpg" alt class="pull-right">
+                                        <p>
+                                         - Đảm bảo bạn có tài khoản VNPAY  đang hoạt động
+                                        <br>
+                                        - Có đủ số dư trong tài khoản VNPAY.   
+                                        </p>
+                                         
                                     </div>	
                                 </li>
                                 
                                 <li>
                                     <input type="radio" class="input-radio" name="payment" value="ib" onclick="show3();">
                                     <label for="payment_method_ib">Internet Banking/ Chuyển khoản </label>	
-                                    <img width="5%" src="source/image/QR/banking.jpg" alt class="pull-right">
-                                    <div id="payment_method_ib" class="payment_box"> 
-                                    - Thẻ ATM
-                                    <br>
-                                    - Đã đăng ký dịch vụ THANH TOÁN TRỰC TUYẾN và/hoặc NGÂN HÀNG ĐIỆN TỬ(internet Banking).
+                                    <div id="payment_method_ib" class="payment_box">
+                                        <img width="33%" src="source/image/QR/banking.jpg" alt class="pull-right">
+                                        <p>
+                                        - Thẻ ATM
+                                        <br>
+                                        - Đã đăng ký dịch vụ THANH TOÁN TRỰC TUYẾN và/hoặc NGÂN HÀNG ĐIỆN TỬ(internet Banking).    
+                                        </p> 
                                     </div>	
                                 </li>
 
                                 <li>
                                     <input type="radio" class="input-radio" name="payment" value="zalopay" onclick="show4();">
                                     <label for="payment_method_zalopay">Zalo Pay</label>
-                                    <img width="5%" src="source/image/QR/zalo.jpg" alt class="pull-right">	
-                                    <div id="payment_method_zalopay" class="payment_box">Ví ZaloPay</div>	
+                                    <div id="payment_method_zalopay" class="payment_box">
+                                        <img width="50%" src="source/image/QR/zalo.jpg" >	
+                                        
+                                        
+                                    </div>	
                                 </li>
 
                                 <li>
                                     <input type="radio" class="input-radio" name="payment" value="momo" onclick="show5();">
                                     <label for="payment_method_momo">Momo</label>	
-                                    <img width="5%" src="source/image/QR/momo.jpg" alt class="pull-right">
-                                    <div id="payment_method_momo" class="payment_box">Ví Momo</div>	
+                                    <div id="payment_method_momo" class="payment_box">
+                                        <img width="50%" src="source/image/QR/momo.jpg" >                                     
+                                    </div>	
                                 </li>
                             </ul>
                         </div>

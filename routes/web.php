@@ -133,3 +133,4 @@ Route::middleware(['auth'])->group(function () {
 
 Route::get('order',[PageController::class,'getOrder'])->name('order');
 Route::get('cancel/{id}',[PageController::class,'getCancel'])->name('cancel');
+Route::get('detail/{id}',[PageController::class,'getDetail'])->name('detail');

@@ -38,8 +38,7 @@ class OrderController extends Controller
                         ->get();
         $customers = DB::table('customers')
                         ->join('bills','bills.id_customer', '=', 'customers.id')
-                        ->first();
-                        
+                        ->first();                
         $status = null;
         $conn =  new mysqli("localhost","root","","isd");
         if (isset($_GET['status']))

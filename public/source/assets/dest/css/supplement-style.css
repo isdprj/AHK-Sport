@@ -97,3 +97,11 @@
 .hide{
     display: none;
 }
+
+.mg-all-8{
+    margin: 8px;
+}
+
+.wd-200{
+    width: 200px;
+}

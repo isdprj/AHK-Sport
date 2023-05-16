@@ -4,7 +4,7 @@
 <table class="table">
     <thead>
     <tr>
-        <th style="width: 200px">Thông tin</th>
+        <th class="wd-200">Thông tin</th>
         <th>Chi tiết</th>
         <th style="width: 100px">&nbsp;</th>
     </tr>
@@ -27,7 +27,6 @@
                         <tr>
                             <th>Tên mặt hàng</th>
                             <th>Giá</th>
-                            <th>Giá gốc</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -35,10 +34,13 @@
                         @foreach ($detailProduct as $dt)
                         <tr>
                             <td>{{$dt->name}}</td>
-                            @if ($dt->promotion_price > 0)
-                                <td>{{number_format($dt->promotion_price)}}</td>
-                            @endif
-                            <td>{{number_format($dt->unit_price)}} đ</td>
+                            <td>
+                                @if ($dt->promotion_price > 0)
+                                {{number_format($dt->promotion_price)}}
+                                @else
+                                {{number_format($dt->unit_price)}} đ
+                                @endif
+                            </td>
                         </tr>
                         @endforeach
                     </tbody>
@@ -56,7 +58,7 @@
         </tr>
         <tr>
             <td>Phương thức thanh toán</td>
-            @if ($bills->payment = 'bacs') 
+            @if ($bills->payment == 'bacs') 
             <td>Chuyển khoản trực tiếp</td>
             @endif
         </tr>

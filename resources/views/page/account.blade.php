@@ -4,7 +4,7 @@
 <div class="alert alert-success">
     {{Session::get('success')}}
 </div>
-@else
+@elseif (Session::has('error'))
 <div class="alert alert-danger">
     {{Session::get('error')}}
 </div>

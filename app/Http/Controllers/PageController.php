@@ -292,5 +292,14 @@ class PageController extends Controller
         }
         return view('page.cancel',compact('bills'));
     }
+
+    public function getDetail($id){
+        $bills = Bill::where('id',$id)->first();
+        $detailProduct = DB::table('products')
+                        ->join('bill_details','bill_details.id_product', '=', 'products.id')
+                        ->where('bill_details.id_bill','=',$id)
+                        ->get();
+        return view('page.detail',compact('bills','detailProduct'));
+    }
 }
 
