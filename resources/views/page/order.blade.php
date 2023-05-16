@@ -1,5 +1,8 @@
 @extends('base')
 @section('content')
+@if (count($bills) == 0)
+    <div class="text-center">Bạn chưa có đơn hàng nào</div>
+@else
 <table class="table">
     <thead>
         <tr>
@@ -17,8 +20,6 @@
         <tr>
             <td>{{ $bill->id }}</td>
             <td>{{date($bill->date_oreder)}}</td>
-                
-            
             @foreach ($detailProduct as $dt)
             <td>{{$dt->name}}</td>
             <td>
@@ -29,6 +30,7 @@
                 @endif
             </td>
             <td>{{$dt->quantity}}</td>
+            @endforeach
             <td>{{$bill->status}}</td>
             <td>
             @if($bill->status != "Đã hủy đơn")    
@@ -40,10 +42,9 @@
             </a>
             @endif
             </td>
-            @endforeach      
-            
         </tr>
         @endforeach
     </tbody>
 </table>
+@endif
 @endsection

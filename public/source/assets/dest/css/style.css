@@ -1434,6 +1434,7 @@ color:#000
 }
 
 .payment_box {
+display: none;
 background:#f8f8f8;
 margin-left:17px;
 margin-top:20px;
@@ -3096,7 +3097,6 @@ margin-bottom:0
 
 #payment div.payment_box:after {
 content:"";
-display:block;
 border-right-color:transparent;
 border-left-color:transparent;
 border-top-color:transparent;

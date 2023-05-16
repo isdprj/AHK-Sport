@@ -56,3 +56,45 @@ function changeRole(id , url){
         $('a[href="#"]').attr('href', url);
     }
 }
+
+function show1(){
+    document.getElementById('payment_method_bacs').style.display = 'block';
+    document.getElementById('payment_method_vnpay').style.display = 'none';
+    document.getElementById('payment_method_ib').style.display = 'none';
+    document.getElementById('payment_method_zalopay').style.display = 'none';
+    document.getElementById('payment_method_momo').style.display = 'none';
+
+
+}
+
+function show2(){
+    document.getElementById('payment_method_bacs').style.display = 'none';
+    document.getElementById('payment_method_vnpay').style.display = 'block';
+    document.getElementById('payment_method_ib').style.display = 'none';
+    document.getElementById('payment_method_zalopay').style.display = 'none';
+    document.getElementById('payment_method_momo').style.display = 'none';
+}
+
+function show3(){
+    document.getElementById('payment_method_bacs').style.display = 'none';
+    document.getElementById('payment_method_vnpay').style.display = 'none';
+    document.getElementById('payment_method_ib').style.display = 'block';
+    document.getElementById('payment_method_zalopay').style.display = 'none';
+    document.getElementById('payment_method_momo').style.display = 'none';
+}
+
+function show4(){
+    document.getElementById('payment_method_bacs').style.display = 'none';
+    document.getElementById('payment_method_vnpay').style.display = 'none';
+    document.getElementById('payment_method_ib').style.display = 'none';
+    document.getElementById('payment_method_zalopay').style.display = 'block';
+    document.getElementById('payment_method_momo').style.display = 'none';
+}
+
+function show5(){
+    document.getElementById('payment_method_bacs').style.display = 'none';
+    document.getElementById('payment_method_vnpay').style.display = 'none';
+    document.getElementById('payment_method_ib').style.display = 'none';
+    document.getElementById('payment_method_zalopay').style.display = 'none';
+    document.getElementById('payment_method_momo').style.display = 'block';
+}

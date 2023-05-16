@@ -4,7 +4,7 @@
             <div class="pull-right auto-width-right">
                 <ul class="top-details menu-beta l-inline">
                     @if (Auth::check())
-                        <li><a href="{{route('account')}}"><i class="fa fa-user"></i>Chào <b>{{Auth::user()-> full_name}}</b> </a></li>
+                        <li><a href="{{route('account')}}"><i class="fa fa-user"></i>Chào <b>{{Auth::user()->full_name}}</b> </a></li>
                         <li><a href="{{route('logout')}}">Đăng xuất</a></li>
                     @else
                         <li><a href="{{route('register')}}">Đăng ký</a></li>
@@ -61,7 +61,7 @@
                                     <a class="pull-left" href="#"><img src="source/image/product/{{$product['item']['image']}}" alt=""></a>
                                     <div class="media-body">
                                         <span class="cart-item-title">{{$product['item']['name']}}</span>
-                                        @if ($product['item']['id_category'] < 6 )
+                                        {{-- @if ($product['item']['id_category'] < 6 )
                                         <span class="select-title">Kích cỡ:
                                             <select class="wc-select-size" name = "size">
                                                 <option value="null"></option>
@@ -86,7 +86,7 @@
                                                     <option value="xl">XL</option>
                                                 </select>                                           
                                             </span>
-                                            @endif
+                                            @endif --}}
                                         <p class="mg-4">Số lượng:
                                             <span class="cart-item-amount">
                                                 <b>{{$product['qty']}}</b>
@@ -125,7 +125,12 @@
 
                                 <div class="center">
                                     <div class="space10">&nbsp;</div>
-                                    <a href="{{route('checkout')}}" class="beta-btn primary text-center">Thanh toán<i class="fa fa-chevron-right"></i></a>
+                                    @if (Auth::check())
+                                    <a href="{{route('checkout')}}" class="beta-btn primary text-center">Thanh toán<i class="fa fa-chevron-right"></i></a>                  
+                                    @else
+                                    <a href="{{route('login')}}" class="beta-btn primary text-center">Thanh toán<i class="fa fa-chevron-right"></i></a>
+                                    
+                                    @endif
                                 </div>
                             </div>
                         </div>

@@ -32,7 +32,7 @@
 
                     <div class="form-block">
                         <label for="your_last_name">Họ và tên* :</label>
-                        <input type="text" name ="name" required>
+                        <input type="text" name ="name" value="{{$user->full_name}}" required>
                     </div>
 
                     <div class="form-block">
@@ -45,17 +45,17 @@
 
                     <div class="form-block">
                         <label for="adress">Địa chỉ*</label>
-                        <input type="text" name="address" required>
+                        <input type="text" value="{{$user->address}}" name="address" required>
                     </div>
 
                     <div class="form-block">
                         <label for="email">Email*</label>
-                        <input type="email" name="email" required>
+                        <input type="email" value="{{$user->email}}" name="email" required>
                     </div>
 
                     <div class="form-block">
                         <label for="phone">Số điện thoại*</label>
-                        <input type="text" name="phone" required>
+                        <input type="text" value="{{$user->phone_number}}" name="phone" required>
                     </div>
                     
                     <div class="form-block">
@@ -81,6 +81,32 @@
                                             <span class="color-gray your-order-info">Đơn giá: <b>{{number_format($pc['price'])}}</b> </span>
                                             <span class="color-gray your-order-info">Số lượng: <b>{{$pc['qty']}}</b> </span>
                                         </div>
+                                        @if ($pc['item']['id_category'] < 6 )
+                                        <span class="select-title">Kích cỡ:
+                                            <select class="wc-select-size" name = "size" required>
+                                                <option value="null"></option>
+                                                <option value="36">36</option>
+                                                <option value="37">37</option>
+                                                <option value="38">38</option>
+                                                <option value="39">39</option>
+                                                <option value="40">40</option>
+                                                <option value="41">41</option>
+                                                <option value="42">42</option>
+                                                <option value="43">43</option>
+                                            </select>                                           
+                                        </span>
+                                            @elseif($pc['item']['id_category'] == 8)
+                                            <span class="select-title">Kích cỡ:
+
+                                                <select class="wc-select-size" name="size" required>
+                                                    <option value="null"></option>
+                                                    <option value="s">S</option>
+                                                    <option value="m">M</option>
+                                                    <option value="l">L</option>
+                                                    <option value="xl">XL</option>
+                                                </select>                                           
+                                            </span>
+                                            @endif
                                     </div>
                                     @endforeach
                                     @endif
@@ -104,10 +130,10 @@
                         
                         <div class="your-order-body">
                             <ul class="payment_methods methods">
-                                <li class="payment_method_bacs">
-                                    <input id="payment_method_bacs" type="radio" class="input-radio" name="payment" value="bacs" checked="checked" data-order_button_text="">
+                                <li>
+                                    <input type="radio" class="input-radio" name="payment" value="cash" onclick="show1();">
                                     <label for="payment_method_bacs">Thanh toán khi nhận hàng</label>
-                                    <div class="payment_box payment_method_bacs" style="display: block;">
+                                    <div id="payment_method_bacs" class="payment_box " >
                                     - Chỉ nhận hàng khi đơn hàng ở trạng thái "ĐANG GIAO HÀNG".
                                     <br>
                                     - Lưu ý kiểm tra mã đơn hàng, mã vận đơn và người gửi "TRƯỚC KHI THANH TOÁN".
@@ -115,24 +141,28 @@
                                     </div>						
                                 </li>
 
-                                <li class="payment_method_cheque">
-                                    <input id="payment_method_cheque" type="radio" class="input-radio" name="payment" value="cheque" data-order_button_text="">
-                                    <label for="payment_method_cheque">Ví VNPay </label>		
+                                <li>
+                                    <input type="radio" class="input-radio" name="payment" value="vnpay" onclick="show2();">
+                                    <label for="payment_method_vnpay">Ví VNPay </label>	
+                                    <div id="payment_method_vnpay" class="payment_box"> Abc</div>	
                                 </li>
                                 
-                                <li class="payment_method_paypal">
-                                    <input id="payment_method_paypal" type="radio" class="input-radio" name="payment" value="paypal" data-order_button_text="Proceed to PayPal">
-                                    <label for="payment_method_paypal">Thẻ tín dụng/Thẻ ghi nợ </label>					
+                                <li>
+                                    <input type="radio" class="input-radio" name="payment" value="ib" onclick="show3();">
+                                    <label for="payment_method_ib">Internet Banking/ Chuyển khoản </label>	
+                                    <div id="payment_method_ib" class="payment_box"> Abc</div>	
                                 </li>
 
-                                <li class="payment_method_paypal">
-                                    <input id="payment_method_paypal" type="radio" class="input-radio" name="payment" value="paypal" data-order_button_text="Proceed to PayPal">
-                                    <label for="payment_method_paypal">Zalo Pay</label>				
+                                <li>
+                                    <input type="radio" class="input-radio" name="payment" value="zalopay" onclick="show4();">
+                                    <label for="payment_method_zalopay">Zalo Pay</label>	
+                                    <div id="payment_method_zalopay" class="payment_box">Abc</div>	
                                 </li>
 
-                                <li class="payment_method_paypal">
-                                    <input id="payment_method_paypal" type="radio" class="input-radio" name="payment" value="paypal" data-order_button_text="Proceed to PayPal">
-                                    <label for="payment_method_paypal">Momo</label>				
+                                <li>
+                                    <input type="radio" class="input-radio" name="payment" value="momo" onclick="show5();">
+                                    <label for="payment_method_momo">Momo</label>	
+                                    <div id="payment_method_momo" class="payment_box">Abc</div>	
                                 </li>
                             </ul>
                         </div>

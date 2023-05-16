@@ -187,9 +187,9 @@ class PageController extends Controller
     }
 
     public function getCheckout(){
+        $user = Auth::user();
         
-        
-        return view('page.checkout');
+        return view('page.checkout',compact('user'));
     }
 
     public function postCheckout(Request $req){
@@ -209,7 +209,7 @@ class PageController extends Controller
         $bill->date_oreder = date('Y-m-d');
         $bill->total = $cart->totalPrc;
         $bill->payment = $req->payment;
-        $bill->note = $req->notes;
+        $bill->note = $req->notes . ". Kích thước: ". $req->size;
         $bill->status = 'Đang xử lí';
         $bill->id_user = Auth::id();
         $bill->save();
@@ -224,7 +224,7 @@ class PageController extends Controller
             $bill_detail->save();
         }
         Session::forget('cart');
-        return redirect()->back()->with('anno', 'Đặt hàng thành công');
+        return redirect('order')->with('anno', 'Đặt hàng thành công');
     }
 
     public function getAccount(){
