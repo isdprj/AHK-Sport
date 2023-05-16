@@ -15,7 +15,7 @@
                 @include('admin.alert')
                 <form action="/admin/users/login/store" method="post">
                     <div class="input-group mb-3">
-                        <input type="text" name="full_name" class="form-control" placeholder="Username">
+                        <input type="text" name="full_name" class="form-control" placeholder="Tên người dùng">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" name="password" class="form-control" placeholder="Password">
+                        <input type="password" name="password" class="form-control" placeholder="Mật khẩu">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>

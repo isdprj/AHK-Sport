@@ -110,7 +110,7 @@
                                     <div class="payment_box payment_method_bacs" style="display: block;">
                                     - Chỉ nhận hàng khi đơn hàng ở trạng thái "ĐANG GIAO HÀNG".
                                     <br>
-                                    - Lưu í kiểm tra mã đơn hàng, mã vận đơn và người gửi "TRƯỚC KHI THANH TOÁN".
+                                    - Lưu ý kiểm tra mã đơn hàng, mã vận đơn và người gửi "TRƯỚC KHI THANH TOÁN".
                     
                                     </div>						
                                 </li>

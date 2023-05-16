@@ -57,10 +57,10 @@
                                             </a>
                                             <p class="single-item-price">
                                                 @if ($pu->promotion_price == 0)
-                                                <span class="flash-sale"><i>{{$pu->unit_price}}</i> đ</span>
+                                                <span class="flash-sale"><i>{{number_format($pu->unit_price)}}</i> đ</span>
                                                 @else
-                                                <span class="flash-del"><i>{{$pu->unit_price}}</i> đ</span>
-                                                <span class="flash-sale"><i>{{$pu->promotion_price}}</i> đ</span>
+                                                <span class="flash-del"><i>{{number_format($pu->unit_price)}}</i> đ</span>
+                                                <span class="flash-sale"><i>{{number_format($pu->promotion_price)}}</i> đ</span>
                                                 @endif
                                             </p>
                                         </div>

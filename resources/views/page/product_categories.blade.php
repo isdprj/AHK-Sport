@@ -55,10 +55,10 @@
                                         <a href="{{route('product',$pot->id)}}"><p class="single-item-title">{{$pot->name}}</p></a> 
                                         <p class="single-item-price">
                                             @if ($pot->promotion_price == 0)
-                                            <span class="flash-sale"><i>{{$pot->unit_price}}</i> đ</span>
+                                            <span class="flash-sale"><i>{{ number_format($pot->unit_price)}}</i> đ</span>
                                             @else 
-                                            <span class="flash-del"><i>{{$pot->unit_price}}</i> đ</span>
-                                            <span class="flash-sale"><i>{{$pot->promotion_price}}</i> đ</span>
+                                            <span class="flash-del"><i>{{ number_format($pot->unit_price)}}</i> đ</span>
+                                            <span class="flash-sale"><i>{{ number_format($pot->promotion_price)}}</i> đ</span>
                                             @endif
                                         </p>
                                     </div>
