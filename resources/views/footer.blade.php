@@ -27,7 +27,7 @@
                     <h4 class="widget-title">Liên hệ</h4>
                     <div>
                             <p>Địa chỉ: Khu đô thị Mễ Trì Hạ, Mễ Trì, Nam Từ Liêm, Hà Nội </p>
-                            <p>Phone: +84 328 047 403</p>
+                            <p>Điện thoại: +84 328 047 403</p>
                             <p>Email: ahksport@gmail.com</p>
                     </div>
                 </div>
