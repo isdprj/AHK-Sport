@@ -63,6 +63,16 @@
             @endif
         </tr>
         <tr>
+            <td>
+                @if ($bills->status == "Hoàn tất")
+                Lý do yêu cầu hoàn trả
+                @else
+                Ghi chú
+                @endif
+            </td>
+            <td>{{$bills->note}}</td>
+        </tr>
+        <tr>
             
                 <td>Tình trạng</td>
                 <td>

@@ -30,9 +30,10 @@
                 <td>{{ $bill->date_oreder }}</td>
                 <td>
                 @if ($bill->status == "Hoàn tất")
-                <span class="btn btn-success btn-xs">Hoàn tất</span>
-                @endif  
+                <span class="btn btn-success btn-xs">{{$bill->status}}</span>
+                @else
                 <span class="btn btn-danger btn-xs">{{$bill->status}}</span>
+                @endif  
                 </td>
                 <td> <a href="/admin/orders/detail/{{$bill->id}}">Chi tiết</a></td>
             </tr>

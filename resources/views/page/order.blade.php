@@ -49,8 +49,9 @@
                 <a href="{{route('cancel',$bill->id)}}" class="btn btn-danger">
                @if ($bill->status == "Hoàn tất")
                 Yêu cầu hoàn trả
-               @endif
+                @else
                 Hủy đơn hàng 
+                @endif
             </a>
             @endif
             </td>
