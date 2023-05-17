@@ -32,10 +32,10 @@
                         <div class="single-item-body">
                             <p class="single-item-title">{{$product->name}}</p>
                             @if ($product->promotion_price == 0)
-                            <span class="flash-sale"><i>{{number_format($product->unit_price)}}</i> đ</span>
+                            <span class="flash-sale"><i>{{number_format($product->unit_price)}}đ</i></span>
                             @else
-                            <span class="flash-del"><i>{{number_format($product->unit_price)}}</i> đ</span>
-                            <span class="flash-sale"><i>{{number_format($product->promotion_price)}}</i> đ</span>
+                            <span class="flash-del"><i>{{number_format($product->unit_price)}}đ</i></span>
+                            <span class="flash-sale"><i>{{number_format($product->promotion_price)}}đ</i></span>
                             @endif
                         </div>
 
@@ -102,7 +102,7 @@
                 <div class="space50">&nbsp;</div>
                 <div class="beta-products-list">
                     <h4>Sản phẩm liên quan</h4>
-                    </br>
+                    <br>
                     <div class="row">
                         @foreach ($relatedProduct as $rp)
                         <div class="col-sm-4">
@@ -119,10 +119,10 @@
                                     <div class="single-item-body">
                                         <p class="single-item-title">{{$rp->name}}</p>
                                         @if ($product->promotion_price == 0)
-                                        <span class="flash-sale"><i>{{number_format($rp->unit_price)}}</i> đ</span>
+                                        <span class="flash-sale"><i>{{number_format($rp->unit_price)}}đ</i> </span>
                                         @else
-                                        <span class="flash-del"><i>{{number_format($rp->unit_price)}}</i> đ</span>
-                                        <span class="flash-sale"><i>{{number_format($rp->promotion_price)}}</i> đ</span>
+                                        <span class="flash-del"><i>{{number_format($rp->unit_price)}}đ</i></span>
+                                        <span class="flash-sale"><i>{{number_format($rp->promotion_price)}}đ</i></span>
                                         @endif
                                         </p>
                                     </div>

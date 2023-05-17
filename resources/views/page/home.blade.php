@@ -41,7 +41,6 @@
                     <div class="beta-products-list">
                         <h5><b>Sản phẩm hot</b></h5>
                         <div class="beta-products-details">
-                            <p class="pull-left">{{count($newProduct)}} sản phẩm</p>
                             <div class="clearfix"></div>
                         </div>
 
@@ -61,10 +60,10 @@
                                         <p class="single-item-title">{{$new->name}}</p>
                                         <p class="single-item-price">
                                             @if ($new->promotion_price == 0)
-                                            <span class="flash-sale">{{number_format($new->unit_price)}} đ</span>
+                                            <span class="flash-sale"><i>{{number_format($new->unit_price)}}đ</i></span>
                                             @else
-                                            <span class="flash-del">{{number_format($new->unit_price)}} đ</span>
-                                            <span class="flash-sale">{{number_format($new->promotion_price)}} đ</span>
+                                            <span class="flash-del"><i>{{number_format($new->unit_price)}}đ</i></span>
+                                            <span class="flash-sale"><i>{{number_format($new->promotion_price)}}đ</i></span>
                                             @endif
 
                                         </p>
@@ -107,7 +106,6 @@
                     <div class="beta-products-list">
                         <h5><b>Các sản phẩm đang được giảm giá</b></h5>
                         <div class="beta-products-details">
-                            <p class="pull-left">{{count($saleProduct)}} sản phẩm</p>
                             <div class="clearfix"></div>
                         </div>
                         <div class="row">
@@ -123,8 +121,8 @@
                                     <div class="single-item-body">
                                         <p class="single-item-title">{{$sp->name}}</p>
                                         <p class="single-item-price">
-                                            <span class="flash-del">{{number_format($sp->unit_price)}} đ</span>
-                                            <span class="flash-sale">{{number_format($sp->promotion_price)}} đ</span>
+                                            <span class="flash-del"><i>{{number_format($sp->unit_price)}}đ</i></span>
+                                            <span class="flash-sale"><i>{{number_format($sp->promotion_price)}}đ</i></span>
                                         </p>
                                     </div>
                                     <div class="single-item-caption">
@@ -184,7 +182,7 @@
                             <div class="news-title">
                                 <a href="https://www.24h.com.vn/bong-da/man-city-arsenal-dai-chien-ai-se-khong-may-nhap-hoi-nhung-a-quan-vi-dai-nhat-c48a1461451.html">Man City - Arsenal đại chiến: Ai sẽ không may "nhập hội" những Á quân vĩ đại nhất?</a>
                             </div>
-                            </br>
+                            <br>
                             <div class="news-content">"Ai thua cuộc chiến Man City - Arsenal sẽ nhập hội những đội Á quân vĩ đại nhất."</div>
                         </div>
                     </div>
@@ -204,7 +202,7 @@
                             <div class="news-title">
                                 <a href="https://www.24h.com.vn/bong-da/tuong-thuat-bong-da-west-ham-liverpool-lu-doan-do-tiep-da-thang-hoa-ngoai-hang-anh-c48a1461612.html">Tường thuật bóng đá West Ham - Liverpool: Kỳ vọng vào Salah (Ngoại hạng Anh)</a>
                             </div>
-                            </br>
+                            <br>
                             <div class="news-content">"(West Ham - Liverpool, 1h45, 27/4, vòng 33 Ngoại hạng Anh) Salah đang có phong độ cao ở thời gian gần đây trong màu áo Liverpool.</div>
                         </div>
                     </div>
@@ -226,7 +224,7 @@
                             <div class="news-title">
                                 <a href="https://www.24h.com.vn/bong-da/tuong-thuat-bong-da-chelsea-brentford-nguy-co-tiep-tuc-tham-hoa-ngoai-hang-anh-c48a1461594.html">Tường thuật bóng đá Chelsea - Brentford: Lampard xác nhận tin xấu 2 trụ cột (Ngoại hạng Anh)</a>
                             </div>
-                            </br>
+                            <br>
                             <div class="news-content">"(Chelsea - Brentford, 1h45, 27/4, vòng 33 Ngoại hạng Anh) HLV Lampard có những chia sẻ không mấy tích cực về lực lượng Chelsea trước ngày đấu Brentford.</div>
                         </div>
                     </div>

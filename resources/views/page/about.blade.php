@@ -186,7 +186,7 @@
             </div>
                     <div class="beta-person-body">
                         <h5>Với khách hàng</h5>
-                        </br>
+                        <br>
                         <p>Luôn cập nhật những mẫu mã giày bóng đá chính hãng mới nhất và những chính sách khuyến mãi – ưu đãi giảm giá hấp dẫn để đáp ứng được nhu cầu của các anh em đam mê môn thể thao vua.</p>
                     </div>
                 </div>
@@ -198,7 +198,7 @@
                 </div>
                     <div class="beta-person-body">
                         <h5>Với nhân viên</h5>
-                        </br>
+                        <br>
                         <p>Xây dựng chính sách lương thưởng hấp dẫn để mỗi nhân viên của AHK Sport phát huy hết điểm mạnh và năng lực của bản thân. Luôn tạo cơ hội cho các bạn trẻ học hỏi và cơ hội được gắn bó lâu dài với AHK Sport</p>
                     </div>
                 </div>
@@ -210,7 +210,7 @@
                 </div>
                     <div class="beta-person-body">
                         <h5>Với đối tác</h5>
-                        </br>
+                        <br>
                         <p>AHK Sport coi sự tôn trọng và uy tín là cốt lõi của một mối quan hệ hợp tác bền vững. Chúng tôi luôn cởi mở và sẵn sàng hợp tác với các đối tác tiềm năng nhằm tìm kiếm một mối quan hệ WIN - WIN. </p>
                     </div>
                 </div>
@@ -222,7 +222,7 @@
                 </div>
                     <div class="beta-person-body">
                         <h5>Với cộng đồng</h5>
-                        </br>
+                        <br>
                         <p>AHK Sport luôn quan tâm đến sự phát triển của bóng đá Việt Nam. Hàng năm chúng tôi vẫn dành một khoản ngân sách để đồng hành cùng các giải bóng đá phong trào, các hoạt động bóng đá cộng đồng nhằm chung tay phát triển cho nền bóng đá nước nhà. </p>
                     </div>
                 </div>
@@ -241,7 +241,7 @@
                 
                     <div class="media-body beta-person-body">
                     <div class="space20">&nbsp;</div>
-                    </br>
+                    <br>
                         <p>✔ Cam kết các sản phẩm chính hãng 100% được nhập khẩu Fullbox từ các nhà phân phối chính hãng tại Việt Nam – Quý khách có thể kiểm tra tem, nhãn trên sản phẩm, và tham khảo ý kiến mọi người trước khi quyết định mua hàng tại AHK Sport</p>
                     </div>
                 </div>
@@ -253,7 +253,7 @@
                 
                     <div class="media-body beta-person-body">
                     <div class="space20">&nbsp;</div>
-                    </br>
+                    <br>
                         <p>✔ Chính sách BỒI THƯỜNG GẤP 10 LẦN NẾU SẢN PHẨM KHÔNG PHẢI CHÍNH HÃNG. Các sản phẩm đều được bảo hành tuyệt đối trong suốt thời gian sử dụng theo chính sách của từng nhà phân phối. </p>
                     </div>
                 </div>

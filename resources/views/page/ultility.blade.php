@@ -34,7 +34,11 @@
                     <div class="beta-products-list">
                         <h6>Tất cả sản phẩm</h6>
                         <div class="beta-products-details">
+                            @if (count($productUltility) == 0)
+                            <p class="pull-left">Không có sản phẩm nào liên quan</p>
+                            @else
                             <p class="pull-left">Số lượng: {{count($productUltility)}}</p>
+                            @endif
                             <div class="clearfix"></div>
                         </div>
 
@@ -57,10 +61,10 @@
                                             </a>
                                             <p class="single-item-price">
                                                 @if ($pu->promotion_price == 0)
-                                                <span class="flash-sale"><i>{{number_format($pu->unit_price)}}</i> đ</span>
+                                                <span class="flash-sale"><i>{{number_format($pu->unit_price)}}đ</i></span>
                                                 @else
-                                                <span class="flash-del"><i>{{number_format($pu->unit_price)}}</i> đ</span>
-                                                <span class="flash-sale"><i>{{number_format($pu->promotion_price)}}</i> đ</span>
+                                                <span class="flash-del"><i>{{number_format($pu->unit_price)}}đ</i></span>
+                                                <span class="flash-sale"><i>{{number_format($pu->promotion_price)}}đ</i></span>
                                                 @endif
                                             </p>
                                         </div>
@@ -92,7 +96,7 @@
                                             @endif
                                             <div class="clearfix"></div>
                                         </div>
-                                        </br>
+                                        <br>
                                     </div>
                                 </div>
                             </div>

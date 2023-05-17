@@ -44,9 +44,9 @@
                             <td class="mg-all-8">{{$dt->name}}</td>
                             <td>
                             @if ($dt->promotion_price > 0)
-                                {{number_format($dt->promotion_price)}} đ
+                            <i>{{number_format($dt->promotion_price)}}đ</i>
                             @else
-                            {{number_format($dt->unit_price)}} đ
+                            <i>{{number_format($dt->unit_price)}}đ</i>
                             @endif
                             </td>
 
@@ -59,7 +59,7 @@
         </tr>
         <tr>
             <td>Tổng tiền</td>
-            <td>{{$bills->total}}đ</td>
+            <td><i>{{$bills->total}}đ</i></td>
         </tr>
         <tr>
             <td>Ngày đặt</td>

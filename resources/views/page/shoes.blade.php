@@ -36,7 +36,11 @@
                     <div class="beta-products-list">
                         <h6>Tất cả sản phẩm</h6>
                         <div class="beta-products-details">
+                            @if (count($productShoes) == 0)
+                            <p class="pull-left">Không có sản phẩm nào liên quan</p>
+                            @else
                             <p class="pull-left">Số lượng: {{count($productShoes)}}</p>
+                            @endif
                             <div class="clearfix"></div>
                         </div>
 
@@ -57,10 +61,10 @@
                                         <a href="{{route('product',$ps->id)}}"><p class="single-item-title">{{$ps->name}}</p></a> 
                                         <p class="single-item-price">
                                             @if ($ps->promotion_price == 0)
-                                            <span class="flash-sale"><i>{{number_format($ps->unit_price)}}</i> đ</span>
+                                            <span class="flash-sale"><i>{{number_format($ps->unit_price)}}đ</i> </span>
                                             @else 
-                                            <span class="flash-del"><i>{{number_format($ps->unit_price)}}</i> đ</span>
-                                            <span class="flash-sale"><i>{{number_format($ps->promotion_price)}}</i> đ</span>
+                                            <span class="flash-del"><i>{{number_format($ps->unit_price)}}đ</i></span>
+                                            <span class="flash-sale"><i>{{number_format($ps->promotion_price)}}đ</i></span>
                                             @endif
                                         </p>
                                     </div>

@@ -92,7 +92,7 @@ Route::get('admin/users/login', [LoginController::class, 'index']);
 
 Route::post('admin/users/login/store', [LoginController::class, 'store']);
 
-Route::middleware(['auth','admin'])->group(function () {
+Route::middleware(['auth', 'admin'])->group(function () {
 
     Route::prefix('admin')->group(function () {
 

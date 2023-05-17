@@ -58,32 +58,30 @@
             </div>
             <div class="col-sm-4">
                 <h6>Thông tin liên hệ</h6>
-                </br>
                 <div class="space20">&nbsp;</div>
 
-                <h8 class="contact-title">Địa chỉ</h8>
-                </br>
+                <h6 class="contact-title">Địa chỉ</h6>
+                <br>
                 <p>
-                    Khu đô thị Mễ Trì, Mễ Trì Hạ, quận Nam Từ Liêm <br>
-                    Thành phố Hà Nội
+                    Khu đô thị Mễ Trì, Mễ Trì Hạ, quận Nam Từ Liêm, Thành phố Hà Nội
                 </p>
-                </br>
+                <br>
                 <div>
                     <div class="map-sizing wow flipInX"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.446504973986!2d105.77936307512884!3d21.014812980631046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313453366bf9ef75%3A0x6698b35be1c121ff!2sVTI%20Building!5e0!3m2!1svi!2s!4v1682522308560!5m2!1svi!2s"></iframe></div>
                 </div>
-                </br>
-                <h8 class="contact-title">Số điện thoại</h8>
-                </br>
+                <br>
+                <h6 class="contact-title">Số điện thoại</h6>
+                <br>
                 <p>+84 328 047 403</p>
-                </br>
+                <br>
                 <div class="space10">&nbsp;</div>
-                <h8 class="contact-title">Email</h8>
-                </br>
+                <h6 class="contact-title">Email</h6>
+                <br>
                 <p><a style="color:cornflowerblue">ahksport@gmail.com</> </a></p>
-                </br>
+                <br>
                 <div class="space10">&nbsp;</div>
                 <h6 class="contact-title">Ứng tuyển</h6>
-                </br>
+                <br>
                 <p>
                     Chúng tôi luôn tìm kiếm những người tài năng để <br>
                     gia nhập đội ngũ của chúng tôi. <br>

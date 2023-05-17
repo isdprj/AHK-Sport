@@ -55,10 +55,10 @@
                                         <a href="{{route('product',$pot->id)}}"><p class="single-item-title">{{$pot->name}}</p></a> 
                                         <p class="single-item-price">
                                             @if ($pot->promotion_price == 0)
-                                            <span class="flash-sale"><i>{{ number_format($pot->unit_price)}}</i> đ</span>
+                                            <span class="flash-sale"><i>{{ number_format($pot->unit_price)}}đ</i></span>
                                             @else 
-                                            <span class="flash-del"><i>{{ number_format($pot->unit_price)}}</i> đ</span>
-                                            <span class="flash-sale"><i>{{ number_format($pot->promotion_price)}}</i> đ</span>
+                                            <span class="flash-del"><i>{{ number_format($pot->unit_price)}}đ</i></span>
+                                            <span class="flash-sale"><i>{{ number_format($pot->promotion_price)}}đ</i></span>
                                             @endif
                                         </p>
                                     </div>
@@ -67,7 +67,7 @@
                                         <a class="beta-btn primary" href="{{route('product',$pot->id)}}">Chi tiết <i class="fa fa-chevron-right"></i></a>
                                         <div class="clearfix"></div>
                                     </div>
-                                    </br>
+                                    <br>
                                 </div>
                             </div>
                         </div>
