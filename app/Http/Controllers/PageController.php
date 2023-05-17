@@ -170,9 +170,11 @@ class PageController extends Controller
         return redirect()->back();
     }
     public function getFavourite(){
+        $id = Auth::id();
         $favouriteProduct = DB::table('favourites')
                             ->join('products','favourites.id_product', '=', 'products.id')
                             ->join('users', 'favourites.id_user', '=', 'users.id')
+                            ->where('id_user',$id)
                             ->get();
         return view('page.favourite',compact('favouriteProduct'));
     }
