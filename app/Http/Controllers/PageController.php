@@ -126,21 +126,21 @@ class PageController extends Controller
         $this->validate($request,
         [
             'email'=> 'required|email',
-            'password' => 'required|min:8'
+            'password' => 'required'
         ],
         [
             'email.required' => 'Vui lòng nhập Email của bạn',
             'email.email' => 'Bạn đã nhập sai định dạng Email. Vui lòng nhập lại Email!',
-            'password.required' => 'Vui lòng nhập Mật khẩu mong muốn',
-            'password.min' => 'Mật khẩu của bạn phải có 8 ký tự trở lên!'
+            'password.required' => 'Vui lòng nhập Mật khẩu mong muốn'
+            
         ]);
-        $credentials = array('email' => $request ->email,
-                             'password'=> $request -> password);
+        $credentials = array('email' => $request->email,
+                             'password'=> $request->password);
         if(Auth::attempt($credentials)){
             return redirect('index')->with(['flag' => 'success','message' => 'Bạn đã đăng nhập thành công!']);
         }
         else{
-            return redirect()->back()->with(['flag' => 'danger', 'message' => 'Bạn đã nhập sai mật khẩu hoặc email! Vui lòng nhập lại đúng thông tin đăng nhập']);
+            return redirect()->back()->with(['flag' => 'danger', 'message' => 'Bạn đã nhập sai mật khẩu hoặc email!']);
         }
     }
 
