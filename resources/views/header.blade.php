@@ -4,6 +4,9 @@
             <div class="pull-right auto-width-right">
                 <ul class="top-details menu-beta l-inline">
                     @if (Auth::check())
+                        @if (Auth::user()->is_admin == 1)
+                        <li><a href="{{route('admin')}}">Tới trang quản trị</a></li>        
+                        @endif
                         <li><a href="{{route('account')}}"><i class="fa fa-user"></i>Chào <b>{{Auth::user()->full_name}}</b> </a></li>
                         <li><a href="{{route('logout')}}">Đăng xuất</a></li>
                     @else

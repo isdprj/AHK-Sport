@@ -98,6 +98,7 @@ Route::middleware(['auth', 'admin'])->group(function () {
 
         Route::get('/', [MainController::class, 'index'])->name('admin');
         Route::get('main', [MainController::class, 'index']);
+        Route::get('logout', [MainController::class, 'getLogout'])->name('adminlogout');
 
         #Menu
         Route::prefix('menus')->group(function () {

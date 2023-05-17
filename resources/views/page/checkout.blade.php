@@ -156,7 +156,7 @@
                                 </li>
                                 
                                 <li>
-                                    <input type="radio" class="input-radio" name="payment" value="ib" onclick="show3();">
+                                    <input type="radio" class="input-radio" name="payment" value="bacs" onclick="show3();">
                                     <label for="payment_method_ib">Internet Banking/ Chuyển khoản </label>	
                                     <div id="payment_method_ib" class="payment_box">
                                         <img width="33%" src="source/image/QR/banking.jpg" alt class="pull-right">
