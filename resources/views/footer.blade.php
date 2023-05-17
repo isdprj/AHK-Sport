@@ -15,7 +15,7 @@
 
             <div class="col-sm-4">
                 <div class="widget">
-                    <h4 class="widget-title">BẢN ĐỒ</h4>
+                    <h4 class="widget-title">Bản Đồ</h4>
                     <div>
                             <div class="map-sizing wow flipInX"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.446504973986!2d105.77936307512884!3d21.014812980631046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313453366bf9ef75%3A0x6698b35be1c121ff!2sVTI%20Building!5e0!3m2!1svi!2s!4v1682522308560!5m2!1svi!2s"></iframe></div>
                     </div>
@@ -41,7 +41,7 @@
 
             <div class="col-sm-2">
                 <div class="widget">
-                    <h4 class="widget-title">CẬP NHẬT TIN TỨC</h4>
+                    <h4 class="widget-title">Cập nhật tin tức</h4>
                     <form action="javascript:void(0);" method="get">
                         <input type="email" name="your_email" placeholder="Email">
                         <button class="beta-btn primary" type="submit" onclick="showPopup()">Đăng ký<i class="fa fa-chevron-right"></i></button>
