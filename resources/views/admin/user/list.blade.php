@@ -1,7 +1,7 @@
 @extends('admin.main')
 
 @section('content')
-        <div class="form-inline">
+        {{-- <div class="form-inline">
             <div class="input-group" data-widget="sidebar-search">
                 <input class="form-control form-control-sidebar" type="search" placeholder="Tìm kiếm..." aria-label="Search">
                 <div class="input-group-append">
@@ -10,7 +10,7 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </div> --}}
     <table class="table">
         <thead>
             <tr>

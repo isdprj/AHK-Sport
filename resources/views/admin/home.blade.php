@@ -1,5 +1,5 @@
 @extends('admin.main')
 
 @section('content')
-    Nội dung
+    <h3 class="text-center">Chào mừng đến với trang quản trị của AHK-Sport</h3>
 @endsection

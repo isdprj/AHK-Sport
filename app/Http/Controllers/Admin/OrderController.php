@@ -17,7 +17,7 @@ class OrderController extends Controller
 
     public function index()
     {
-        $bills = Bill::get()->sortByDesc('date_oreder');
+        $bills = Bill::get()->sortByDesc('updated_at');
         $customers = DB::table('customers')
                         ->join('bills','bills.id_customer', '=', 'customers.id')
                         ->get();

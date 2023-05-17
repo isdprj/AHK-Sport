@@ -2,7 +2,7 @@
 
 @section('content')
         <!-- SidebarSearch Form -->
-        <div class="form-inline">
+        {{-- <div class="form-inline">
             <div class="input-group" data-widget="sidebar-search">
                 <input class="form-control form-control-sidebar" type="search" placeholder="Tìm kiếm..." aria-label="Search">
                 <div class="input-group-append">
@@ -11,7 +11,7 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </div> --}}
     <table class="table">
         <thead>
         <tr>
@@ -19,7 +19,7 @@
             <th style="width: 80px">Tên Sản Phẩm</th>
             <th style="width: 50px">Loại</th>
             <th>Giá Gốc</th>
-            <th>Khuyến Mãi</th>
+            <th style="width: 108px">Khuyến Mãi</th>
             <th>Mô tả</th>
             <th>Thông số</th>
             <th>Đơn vị</th>
@@ -37,7 +37,7 @@
                 <td>{{ $product->unit_price }}</td>
                 <td>{{ $product->promotion_price }}</td>
                 <td style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;max-width:250px;">{{$product->description}}</td>
-                <td style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width:150px">{{$product->stats}}</td>
+                <td style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;max-width:250px">{{$product->stats}}</td>
                 <td>{{$product->unit}}</td>
                 <td>{{$product->quantity}}</td>
                 {{-- <td>{!! \App\Helpers\Helper::active($product->active) !!}</td> --}}

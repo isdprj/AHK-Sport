@@ -2,7 +2,7 @@
 
 @section('content')
         <!-- SidebarSearch Form -->
-        <div class="form-inline">
+        {{-- <div class="form-inline">
             <div class="input-group" data-widget="sidebar-search">
                 <input class="form-control form-control-sidebar" type="search" placeholder="Tìm kiếm..." aria-label="Search">
                 <div class="input-group-append">
@@ -11,7 +11,7 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </div> --}}
     <table class="table">
         <thead>
         <tr>
@@ -19,6 +19,7 @@
             <th>Ngày đặt</th>
             <th>Tình trạng</th>
             <th>Xem chi tiết</th>
+            <th>Chỉnh sửa lần cuối</th>
             {{-- <th>Trạng thái thanh toán</th> --}}
             <th style="width: 100px">&nbsp;</th>
         </tr>
@@ -36,6 +37,7 @@
                 @endif  
                 </td>
                 <td> <a href="/admin/orders/detail/{{$bill->id}}">Chi tiết</a></td>
+                <td>{{$bill->updated_at}}</td>
             </tr>
             @endforeach
         </tbody>
