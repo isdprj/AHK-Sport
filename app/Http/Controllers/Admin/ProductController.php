@@ -39,7 +39,7 @@ class ProductController extends Controller
     public function store(ProductRequest $request)
     {
         $this->productService->insert($request);
-        return redirect()->back();
+        return redirect('/admin/products/list');
         
     }
     
