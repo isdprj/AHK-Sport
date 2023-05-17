@@ -6,7 +6,7 @@
             <h4 class="inner-title"> <b>Thanh toán<b> </h4>
         </div>
         <div class="pull-right">
-            <div class="beta-breadcrumb">
+            <div class="beta-breadcrumb font-large">
                 <a href="{{route('index')}}">Trang chủ</a> / <span>Thanh toán</span>
             </div>
         </div>
@@ -172,18 +172,26 @@
                                     <input type="radio" class="input-radio" name="payment" value="zalopay" onclick="show4();">
                                     <label for="payment_method_zalopay">Zalo Pay</label>
                                     <div id="payment_method_zalopay" class="payment_box">
-                                        <img width="50%" src="source/image/QR/zalo.jpg" >	
-                                        
-                                        
+                                        <img width="33%" src="source/image/QR/zalo.jpg" alt class="pull-right">	
+                                        <p>
+                                         - Đảm bảo bạn có tài khoản ZALOPAY  đang hoạt động
+                                        <br>
+                                        - Có đủ số dư trong tài khoản ZALOPAY.   
+                                        </p>
                                     </div>	
                                 </li>
-
                                 <li>
                                     <input type="radio" class="input-radio" name="payment" value="momo" onclick="show5();">
                                     <label for="payment_method_momo">Momo</label>	
                                     <div id="payment_method_momo" class="payment_box">
-                                        <img width="50%" src="source/image/QR/momo.jpg" >                                     
+                                        <img width="33%" src="source/image/QR/momo.jpg" alt class="pull-right">   
+                                        <p>
+                                         - Đảm bảo bạn có ví điện tử MOMO đang hoạt động
+                                        <br>
+                                        - Có đủ số dư trong ví MOMO.   
+                                        </p>                                  
                                     </div>	
+                                    
                                 </li>
                             </ul>
                         </div>

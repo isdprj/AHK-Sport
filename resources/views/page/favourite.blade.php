@@ -29,7 +29,7 @@
         <div class="beta-products-list">
             <h6>Tất cả sản phẩm yêu thích</h6>
             <div class="beta-products-details">
-                <p class="pull-left">Có {{count($favouriteProduct)}} sản phẩm</p>
+                <p class="pull-left">Số lượng: {{count($favouriteProduct)}}</p>
                 <div class="clearfix"></div>
             </div>
 

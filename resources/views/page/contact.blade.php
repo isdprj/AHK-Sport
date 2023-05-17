@@ -79,7 +79,7 @@
                 <div class="space10">&nbsp;</div>
                 <h8 class="contact-title">Email</h8>
                 </br>
-                <p>ahksport@gmail.com</p>
+                <p><a style="color:cornflowerblue">ahksport@gmail.com</> </a></p>
                 </br>
                 <div class="space10">&nbsp;</div>
                 <h6 class="contact-title">Ứng tuyển</h6>
@@ -87,7 +87,7 @@
                 <p>
                     Chúng tôi luôn tìm kiếm những người tài năng để <br>
                     gia nhập đội ngũ của chúng tôi. <br>
-                    <a href="hr@betadesign.com" style="color:cornflowerblue">hr@betadesign.com</a>
+                    <a style="color:cornflowerblue">hr@ahksport.com</a>
                 </p>
             </div>
         </div>

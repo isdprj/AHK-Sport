@@ -36,37 +36,37 @@
                     </div>
                 @endif
                 <div class="col-sm-6">  
-                    <h6><b>Đăng ký biểu mẫu</b></h6>
+                    <h6><b>Biểu mẫu đăng ký</b></h6>
                     <div class="space20">&nbsp;</div>
 
                     
                     <div class="form-block">
                         <label for="email"><b>Địa chỉ email*</b></label>
-                        <input type="email" name="email" required>
+                        <input type="email" name="email" required class="form-control">
                     </div>
 
                     <div class="form-block">
                         <label for="your_last_name"><b>Họ và tên*</b></label>
-                        <input type="text" name="fullname" required>
+                        <input type="text" name="fullname" required class="form-control">
                     </div>
 
                     <div class="form-block">
                         <label for="address"><b>Địa chỉ*</b></label>
-                        <input type="text" name="address" placeholder="Đường, Xã/ Phường, Quận/ Thị Xã, Thành Phố/ Tỉnh" required>
+                        <input type="text" name="address" placeholder="Đường, Xã/ Phường, Quận/ Thị Xã, Thành Phố/ Tỉnh" required class="form-control">
                     </div>
 
 
                     <div class="form-block">
                         <label for="phone"><b>Số điện thoại*</b></label>
-                        <input type="text" name="phone" required>
+                        <input type="text" name="phone" required class="form-control">
                     </div>
                     <div class="form-block">
                         <label for="phone"><b>Mật khẩu*</b></label>
-                        <input type="text" name="password" required>
+                        <input type="password" name="password" required class="form-control">
                     </div>
                     <div class="form-block">
                         <label for="phone"><b>Xác nhận mật khẩu*</b></label>
-                        <input type="text" name="re_password" required>
+                        <input type="password" name="re_password" required class="form-control">
                     </div>
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary">Đăng ký</button>

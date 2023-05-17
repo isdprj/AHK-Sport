@@ -1,6 +1,6 @@
 @extends('base')
 @section('content')
-    
+
 <div class="space25">&nbsp;</div>
 <div class="inner-header">
     <div class="container">
@@ -18,51 +18,55 @@
 
 <div class="container">
     <div id="content">
-        
+
         <form action="{{route('login')}}" method="post" class="beta-form-checkout">
             <input type="hidden" name="_token" value="{{csrf_token()}}">
             <div class="row">
                 <div class="col-sm-3"></div>
                 @if (Session::has('flag'))
-                    <div class="alert alert-{{Session::get('flag') }}">
-                        {{Session::get('message')}}
-                </div> 
+                <div class="alert alert-{{Session::get('flag') }}">
+                    {{Session::get('message')}}
+                </div>
                 @endif
 
                 <div class="col-sm-6">
                     <div class="space20">&nbsp;</div>
+                    <div class="form-block">
+                        <label for="email"><b>Email*</b></label>
+                        <input type="email" name="email" required class="form-control">
+                    </div>
+                    <div class="form-block">
+                        <label for="password"><b>Mật khẩu*</b></label>
+                        <input type="password" name="password" required class="form-control">
+                    </div>
 
-                    
-                    <div class="form-block">
-                        <label for="email"> <b>Email*</b> </label>
-                        <input type="email" name="email" required>
-                    </div>
-                    <div class="form-block">
-                        <label for="password"> <b>Mật khẩu*</b> </label>
-                        <input type="password" name="password" required>
-                    </div>
                     {{-- <div class="form-group">
                         <label class="label-agree-term"><span></span><span></span>
                             <a href="{{ route('password.request') }}"> Quên Mật khẩu? </a>
-                        </label>
-                    </div> --}}
-                    <div class="social-login">
-                        <a class="circle facebook" href=" {{ url('login/facebook')}} ">
-                            <i class="fa fa-facebook-square fa-2x"></i>
+                    </label>
+                </div> --}}
+                <div class="space10">&nbsp;</div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary"> Đăng nhập </button>
+                </div>
+                <div class="space10">&nbsp;</div>
+                <hr>
+                <div class="social-login">
+                    <p class="text-center">Hoặc đăng nhập bằng</p>
+                    <br>
+                    <div class="text-center">
+                        <a class="circle facebook" href="https://www.facebook.com/login.php">
+                            <img width="5%" src="source/image/social/fb.png" alt="Facebook" style="margin-right: 5px;">
                         </a>
-    
-                        <a class="circle google" href=" {{ url('login/google') }} ">
-                            <i class="fa fa-google-plus-square fa-2x"></i>
+                        <a class="circle google" href="{{ url('login/google') }}">
+                            <img width="5%" src="source/image/social/gmail.png" alt="Google" style="margin-left: 5px;">
                         </a>
-
-                    </div>
-                    <div class="form-block">
-                        <button type="submit" class="btn btn-primary"> Đăng nhập </button>
                     </div>
                 </div>
-                <div class="col-sm-3"></div>
             </div>
-        </form>
-    </div> <!-- #content -->
+            <div class="col-sm-3"></div>
+    </div>
+    </form>
+</div> <!-- #content -->
 </div> <!-- .container -->
 @endsection

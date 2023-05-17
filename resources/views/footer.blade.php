@@ -24,12 +24,14 @@
             </div>
             <div class="col-sm-3">
                 <div class="col-sm-10">
-                    <div class="widget">
+                <div class="widget">
                         <h4 class="widget-title">Liên hệ</h4>
                         <div>
-                            <p>Địa chỉ: Khu đô thị Mễ Trì Hạ, Mễ Trì, Nam Từ Liêm, Hà Nội </p>
-                            <p>Điện thoại: +84 328 047 403</p>
-                            <p>Email: ahksport@gmail.com</p>
+                            <p><i class="fa fa-map-marker"></i>&ensp;Địa chỉ: Khu đô thị Mễ Trì Hạ, Nam Từ Liêm, Hà Nội </p>
+                            <br>
+                            <p><i class="fa fa-phone"></i>&ensp;Điện thoại: +84 328 047 403</p>
+                            <br>
+                            <p><i class="fa fa-google-plus"></i>&ensp;Email: ahksport@gmail.com</p>
                         </div>
                     </div>
                 </div>
