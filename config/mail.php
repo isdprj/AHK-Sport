@@ -39,7 +39,7 @@ return [
             'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
             'port' => env('MAIL_PORT', 465),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('smgames2099@gmail.com'),
+            'username' => env(''),
             'password' => env('mail_password'),
             'timeout' => null,
             'auth_mode' => null,
@@ -84,7 +84,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'smgames2099@gmail.com'),
+        'address' => env('MAIL_FROM_ADDRESS', ''),
         'name' => env('MAIL_FROM_NAME', 'AHK'),
     ],
 
